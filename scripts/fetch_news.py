@@ -4,7 +4,7 @@ import json, urllib.request, os, random, re
 from datetime import datetime, timezone, timedelta
 
 OUTPUT = "js/data.js"
-MAX_ITEMS = 30  # More items per source
+MAX_ITEMS = 50  # More items per source
 
 # === AI Classification Tags ===
 def classify_tags(title, desc=""):
@@ -169,6 +169,21 @@ GLOSSARY = {
     # arXiv
     "arXiv": {"zh": "arXiv", "ja": "arXiv"},
     "Hacker News": {"zh": "Hacker News", "ja": "Hacker News"},
+    # Chinese companies
+    "百度": {"zh": "百度", "ja": "百度"},
+    "阿里巴巴": {"zh": "阿里巴巴", "ja": "アリババ"},
+    "腾讯": {"zh": "腾讯", "ja": "テンセント"},
+    "华为": {"zh": "华为", "ja": "ファーウェイ"},
+    "字节跳动": {"zh": "字节跳动", "ja": "バイトダンス"},
+    "智谱": {"zh": "智谱", "ja": "Zhipu"},
+    "月之暗面": {"zh": "月之暗面", "ja": "Moonshot"},
+    "MiniMax": {"zh": "MiniMax", "ja": "MiniMax"},
+    "零一万物": {"zh": "零一万物", "ja": "01.AI"},
+    "百川": {"zh": "百川", "ja": "Baichuan"},
+    "讯飞": {"zh": "讯飞", "ja": "iFlytek"},
+    "商汤": {"zh": "商汤", "ja": "SenseTime"},
+    "旷视": {"zh": "旷视", "ja": "Megvii"},
+
 }
 
 def translate_en_to_zh(text):
@@ -283,6 +298,108 @@ def get_arxiv():
     except: pass
     return items
 
+
+def get_huggingface():
+    """Fetch trending AI papers from Hugging Face Daily Papers"""
+    items = []
+    try:
+        data = fetch_json("https://huggingface.co/api/daily_papers?limit=10")
+        if not data: return items
+        for paper in data[:10]:
+            title = paper.get("title", paper.get("paper", {}).get("title", ""))
+            url = f"https://huggingface.co/papers/{paper.get('id', paper.get('paper', {}).get('id', ''))}"
+            if title:
+                en_title = title[:120]
+                items.append({
+                    "title_en": en_title, "title_zh": translate_en_to_zh(en_title),
+                    "title_ja": translate_en_to_ja(en_title),
+                    "url": url, "heat": random.randint(65, 88),
+                    "source": "Hugging Face", "time": datetime.now(timezone.utc).strftime("%H:%M"),
+                    "day": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                    "tags": classify_tags(en_title),
+                })
+    except: pass
+    return items
+
+def get_techcrunch():
+    """Fetch AI news from TechCrunch RSS"""
+    items = []
+    try:
+        import xml.etree.ElementTree as ET
+        req = urllib.request.Request("https://techcrunch.com/category/artificial-intelligence/feed/", 
+                                      headers={"User-Agent": "SlimeAI/1.0"})
+        data = urllib.request.urlopen(req, timeout=15).read()
+        root = ET.fromstring(data)
+        ns = {"atom": "http://www.w3.org/2005/Atom", "": "http://www.w3.org/2005/Atom"}
+        for entry in root.findall(".//entry", ns)[:10]:
+            title_el = entry.find("title", ns)
+            link_el = entry.find("link", ns)
+            if title_el is not None and link_el is not None:
+                title = title_el.text[:120] if title_el.text else ""
+                url = link_el.get("href", "")
+                if title:
+                    items.append({
+                        "title_en": title, "title_zh": translate_en_to_zh(title),
+                        "title_ja": translate_en_to_ja(title),
+                        "url": url, "heat": random.randint(60, 85),
+                        "source": "TechCrunch", "time": datetime.now(timezone.utc).strftime("%H:%M"),
+                        "day": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                        "tags": classify_tags(title),
+                    })
+    except: pass
+    return items
+
+def get_36kr():
+    """Fetch AI news from 36Kr (Chinese domestic source)"""
+    items = []
+    try:
+        import xml.etree.ElementTree as ET
+        req = urllib.request.Request("https://36kr.com/feed", headers={"User-Agent": "SlimeAI/1.0"})
+        data = urllib.request.urlopen(req, timeout=15).read()
+        root = ET.fromstring(data)
+        ns = {"": "http://www.w3.org/2005/Atom"}
+        for entry in root.findall(".//entry", ns)[:10]:
+            title_el = entry.find("title", ns)
+            link_el = entry.find("link", ns)
+            if title_el is not None and link_el is not None:
+                title = title_el.text[:120] if title_el.text else ""
+                url = link_el.get("href", "")
+                if title and any(kw in title.lower() for kw in ["ai", "人工智能", "大模型", "gpt", "llm", "agent", "智能体", "机器学习", "模型"]):
+                    items.append({
+                        "title_en": title, "title_zh": title, "title_ja": title,
+                        "url": url, "heat": random.randint(60, 85),
+                        "source": "36氪", "time": datetime.now(timezone.utc).strftime("%H:%M"),
+                        "day": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                        "tags": classify_tags(title),
+                    })
+    except: pass
+    return items
+
+def get_qbitai():
+    """Fetch AI news from 量子位 (QbitAI - Chinese domestic)"""
+    items = []
+    try:
+        import xml.etree.ElementTree as ET
+        req = urllib.request.Request("https://www.qbitai.com/feed", headers={"User-Agent": "SlimeAI/1.0"})
+        data = urllib.request.urlopen(req, timeout=15).read()
+        root = ET.fromstring(data)
+        for item in root.findall(".//item")[:8]:
+            title_el = item.find("title")
+            link_el = item.find("link")
+            if title_el is not None and link_el is not None:
+                title = title_el.text[:120] if title_el.text else ""
+                url = link_el.text or ""
+                if title:
+                    items.append({
+                        "title_en": title, "title_zh": title, "title_ja": title,
+                        "url": url, "heat": random.randint(60, 85),
+                        "source": "量子位", "time": datetime.now(timezone.utc).strftime("%H:%M"),
+                        "day": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                        "tags": classify_tags(title),
+                    })
+    except: pass
+    return items
+
 def get_placeholder():
     samples = [
         ("OpenAI releases GPT-5.5 with 3x reasoning improvement",
@@ -391,7 +508,7 @@ if __name__ == "__main__":
     all_items = list(existing_items)
     existing_urls = {item.get("url", "") for item in existing_items}
     
-    for fetcher in [get_hackernews, get_gihub_trending, get_arxiv]:
+    for fetcher in [get_hackernews, get_gihub_trending, get_arxiv, get_huggingface, get_techcrunch, get_36kr, get_qbitai]:
         try:
             items = fetcher()
             if items:
