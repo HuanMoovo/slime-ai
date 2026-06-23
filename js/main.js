@@ -161,9 +161,9 @@ function switchView(view) {
 // --- Tag translation helper ---
 function tagI18n(tag) {
   const map = {
-    zh: { model: '模型', product: '产品', industry: '行业', paper: '论文', tutorial: '教程', agent: '智能体' },
-    ja: { model: 'モデル', product: 'プロダクト', industry: '業界', paper: '論文', tutorial: 'チュートリアル', agent: 'エージェント' },
-    en: { model: 'Model', product: 'Product', industry: 'Industry', paper: 'Paper', tutorial: 'Tutorial', agent: 'Agent' }
+    zh: { model: '模型', product: '产品', industry: '行业', paper: '论文', tutorial: '教程', agent: '智能体', 'open-source': '开源', safety: '安全', multimodal: '多模态', coding: '编码', robotics: '机器人', video: '视频', speech: '语音', deployment: '部署', policy: '政策' },
+    ja: { model: 'モデル', product: 'プロダクト', industry: '業界', paper: '論文', tutorial: 'チュートリアル', agent: 'エージェント', 'open-source': 'オープンソース', safety: '安全性', multimodal: 'マルチモーダル', coding: 'コーディング', robotics: 'ロボティクス', video: '動画', speech: '音声', deployment: 'デプロイ', policy: '政策' },
+    en: { model: 'Model', product: 'Product', industry: 'Industry', paper: 'Paper', tutorial: 'Tutorial', agent: 'Agent', 'open-source': 'Open Source', safety: 'Safety', multimodal: 'Multimodal', coding: 'Coding', robotics: 'Robotics', video: 'Video', speech: 'Speech', deployment: 'Deploy', policy: 'Policy' }
   };
   return map[currentLang]?.[tag] || tag;
 }
