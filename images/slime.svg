@@ -1,62 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#a78bfa"/>
-      <stop offset="50%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#6d28d9"/>
-    </linearGradient>
-    <linearGradient id="sg2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
-    </linearGradient>
+    <radialGradient id="bodyGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="40%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </radialGradient>
+    <radialGradient id="eyeShine" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e0e0ff"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </radialGradient>
   </defs>
 
-  <!-- Shadow -->
-  <ellipse cx="60" cy="105" rx="30" ry="5" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Drop shadow -->
+  <ellipse cx="100" cy="172" rx="52" ry="10" fill="#1a1a2e" opacity="0.08"/>
 
-  <!-- Body - geometric slime blob -->
-  <path d="M60 18 
-           C45 18 32 28 28 42 
-           C24 56 25 70 30 80 
-           C33 86 38 90 44 93 
-           C50 96 55 97 60 97 
-           C65 97 70 96 76 93 
-           C82 90 87 86 90 80 
-           C95 70 96 56 92 42 
-           C88 28 75 18 60 18Z" 
-        fill="url(#sg)"/>
+  <!-- Main body - big round squishy blob -->
+  <path d="M100 25 
+           C60 25 30 50 28 80 
+           C26 105 32 125 42 140 
+           C50 151 62 158 76 163 
+           C86 166 93 167 100 167 
+           C107 167 114 166 124 163 
+           C138 158 150 151 158 140 
+           C168 125 174 105 172 80 
+           C170 50 140 25 100 25Z" 
+        fill="url(#bodyGrad)"/>
 
-  <!-- Body highlight top -->
-  <ellipse cx="60" cy="30" rx="22" ry="10" fill="url(#sg2)"/>
+  <!-- Body highlight -->
+  <ellipse cx="85" cy="55" rx="35" ry="18" fill="#ddd6fe" opacity="0.3"/>
+
+  <!-- Left eye - BIG anime style -->
+  <ellipse cx="72" cy="85" rx="20" ry="22" fill="#1a1a2e"/>
+  <ellipse cx="72" cy="85" rx="17" ry="19" fill="url(#eyeShine)"/>
+  <ellipse cx="72" cy="85" rx="11" ry="13" fill="#8b5cf6"/>
+  <ellipse cx="70" cy="82" rx="8" ry="10" fill="#a78bfa"/>
+  <!-- Sparkle highlights -->
+  <ellipse cx="64" cy="76" rx="5" ry="6" fill="#ffffff" opacity="0.95"/>
+  <circle cx="78" cy="92" r="2.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="68" cy="90" r="1.5" fill="#1a1a2e" opacity="0.15"/>
+
+  <!-- Right eye - BIG anime style -->
+  <ellipse cx="128" cy="85" rx="20" ry="22" fill="#1a1a2e"/>
+  <ellipse cx="128" cy="85" rx="17" ry="19" fill="url(#eyeShine)"/>
+  <ellipse cx="128" cy="85" rx="11" ry="13" fill="#8b5cf6"/>
+  <ellipse cx="126" cy="82" rx="8" ry="10" fill="#a78bfa"/>
+  <!-- Sparkle highlights -->
+  <ellipse cx="120" cy="76" rx="5" ry="6" fill="#ffffff" opacity="0.95"/>
+  <circle cx="134" cy="92" r="2.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="124" cy="90" r="1.5" fill="#1a1a2e" opacity="0.15"/>
+
+  <!-- Blush - cute pink circles -->
+  <ellipse cx="50" cy="110" rx="12" ry="7" fill="#f472b6" opacity="0.25"/>
+  <ellipse cx="150" cy="110" rx="12" ry="7" fill="#f472b6" opacity="0.25"/>
+
+  <!-- Mouth - super cute tiny smile -->
+  <path d="M88 112 Q95 122 100 124 Q105 122 112 112" 
+        fill="none" stroke="#5b21b6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Tiny open mouth hint -->
+  <ellipse cx="100" cy="120" rx="5" ry="3" fill="#5b21b6" opacity="0.15"/>
+
+  <!-- Small arms -->
+  <path d="M28 110 Q15 105 12 115 Q10 122 16 120" fill="none" stroke="#8b5cf6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M172 110 Q185 105 188 115 Q190 122 184 120" fill="none" stroke="#8b5cf6" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Feet nubbins -->
+  <ellipse cx="70" cy="166" rx="16" ry="6" fill="#7c3aed"/>
+  <ellipse cx="130" cy="166" rx="16" ry="6" fill="#7c3aed"/>
 
   <!-- Drip drops -->
-  <ellipse cx="38" cy="92" rx="3" ry="5" fill="#7c3aed"/>
-  <ellipse cx="82" cy="90" rx="2.5" ry="4" fill="#7c3aed"/>
-  <circle cx="60" cy="100" r="2" fill="#7c3aed" opacity="0.5"/>
+  <ellipse cx="50" cy="155" rx="4" ry="6" fill="#a78bfa" opacity="0.7"/>
+  <ellipse cx="150" cy="153" rx="3" ry="5" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="100" cy="170" r="3" fill="#a78bfa" opacity="0.4"/>
 
-  <!-- Left eye - circle -->
-  <circle cx="48" cy="56" r="10" fill="#1a1a2e"/>
-  <circle cx="48" cy="56" r="8" fill="#f0f0ff"/>
-  <circle cx="48" cy="56" r="5" fill="#8b5cf6"/>
-  <circle cx="46" cy="54" r="3.5" fill="#c4b5fd"/>
-  <circle cx="44" cy="52" r="2" fill="#ffffff" opacity="0.9"/>
-
-  <!-- Right eye - circle -->
-  <circle cx="72" cy="56" r="10" fill="#1a1a2e"/>
-  <circle cx="72" cy="56" r="8" fill="#f0f0ff"/>
-  <circle cx="72" cy="56" r="5" fill="#8b5cf6"/>
-  <circle cx="70" cy="54" r="3.5" fill="#c4b5fd"/>
-  <circle cx="68" cy="52" r="2" fill="#ffffff" opacity="0.9"/>
-
-  <!-- Blush - circles -->
-  <circle cx="38" cy="68" r="4" fill="#ec4899" opacity="0.2"/>
-  <circle cx="82" cy="68" r="4" fill="#ec4899" opacity="0.2"/>
-
-  <!-- Mouth - gentle arc -->
-  <path d="M54 72 Q60 78 66 72" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Sparkles -->
-  <circle cx="28" cy="32" r="1.5" fill="#ddd6fe" opacity="0.6"/>
-  <circle cx="92" cy="30" r="1.5" fill="#ddd6fe" opacity="0.6"/>
-  <circle cx="60" cy="22" r="1" fill="#ede9fe" opacity="0.4"/>
+  <!-- Sparkles around the slime -->
+  <g fill="#c4b5fd" opacity="0.7">
+    <path d="M25 45 L27 40 L29 45 L34 47 L29 49 L27 54 L25 49 L20 47Z" transform="scale(0.6) translate(10,20)"/>
+    <path d="M170 40 L172 35 L174 40 L179 42 L174 44 L172 49 L170 44 L165 42Z" transform="scale(0.5) translate(80,30)"/>
+    <circle cx="42" cy="38" r="2"/>
+    <circle cx="158" cy="36" r="2"/>
+    <circle cx="100" cy="28" r="2.5"/>
+  </g>
 </svg>
