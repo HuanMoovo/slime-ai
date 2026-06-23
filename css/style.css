@@ -114,6 +114,17 @@ a:hover { color: var(--accent2); }
 
 .theme-toggle { background:none; border:none; font-size:1.1rem; cursor:pointer; padding:4px; border-radius:6px; }
 .theme-toggle:hover { background: var(--card); }
+
+/* GitHub header link */
+.gh-link {
+  display: flex; align-items: center;
+  color: var(--text3);
+  padding: 4px;
+  border-radius: 6px;
+  transition: all .2s;
+}
+.gh-link:hover { color: var(--text); background: var(--card); }
+
 .nav-toggle { display:none; background:none; border:none; color:var(--text); font-size:1.4rem; cursor:pointer; }
 
 /* === Hero === */
