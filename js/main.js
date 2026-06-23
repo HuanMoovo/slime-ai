@@ -323,12 +323,24 @@ function initTheme() {
   if (!toggle) return;
   const saved = localStorage.getItem('aislime-theme');
   if (saved) document.documentElement.setAttribute('data-theme', saved);
+  updateLogo();
+  
   toggle.addEventListener('click', () => {
     const cur = document.documentElement.getAttribute('data-theme');
     const next = cur === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('aislime-theme', next);
+    updateLogo();
   });
+}
+
+function updateLogo() {
+  const theme = document.documentElement.getAttribute('data-theme');
+  const logoImg = document.querySelector('.logo-img');
+  const heroImg = document.querySelector('.hero-slime-img');
+  const src = theme === 'light' ? 'images/logo-light.svg' : 'images/logo.svg';
+  if (logoImg) logoImg.src = src;
+  if (heroImg) heroImg.src = src;
 }
 
 // --- Filter ---
