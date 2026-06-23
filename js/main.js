@@ -205,14 +205,13 @@ function renderNews() {
 
         html += `<div class="news-card" onclick="window.open('${item.url}','_blank')">
           <div class="card-main">
-            <div class="card-title">${medal} ${content.title}</div>
-            <div class="card-desc">${content.desc}</div>
-            <div class="card-meta">
+            <div class="card-header">
               <span class="card-source">${item.source}</span>
               <span class="card-time">${item.day.slice(5)} ${item.time}</span>
-              <span class="card-tags">
-                ${item.tags.map(t => `<span class="card-tag ${t}">${tagI18n(t)}</span>`).join('')}
-              </span>
+            </div>
+            <div class="card-title">${medal} ${content.title}</div>
+            <div class="card-tags">
+              ${item.tags.map(t => `<span class="card-tag ${t}">${tagI18n(t)}</span>`).join('')}
             </div>
           </div>
           <div class="card-side">
@@ -265,14 +264,13 @@ function renderNews() {
 
       html += `<div class="news-card" onclick="window.open('${item.url}','_blank')">
         <div class="card-main">
-          <div class="card-title">${content.title}</div>
-          <div class="card-desc">${content.desc}</div>
-          <div class="card-meta">
+          <div class="card-header">
             <span class="card-source">${item.source}</span>
             <span class="card-time">${item.time}</span>
-            <span class="card-tags">
-              ${item.tags.map(t => `<span class="card-tag ${t}">${tagI18n(t)}</span>`).join('')}
-            </span>
+          </div>
+          <div class="card-title">${content.title}</div>
+          <div class="card-tags">
+            ${item.tags.map(t => `<span class="card-tag ${t}">${tagI18n(t)}</span>`).join('')}
           </div>
         </div>
         <div class="card-side">
