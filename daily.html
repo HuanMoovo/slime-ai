@@ -270,9 +270,9 @@
       if (dates.length) renderDaily(dates[0]);
 
       document.getElementById('prevDay')?.addEventListener('click', () => {
-        const dates = [...new Set(NEWS_DATA.map(d => d.day))].sort();
+        const dates = [...new Set(NEWS_DATA.map(d => d.day))].sort((a,b) => b.localeCompare(a));
         const idx = dates.indexOf(currentDailyDate);
-        if (idx > 0) renderDaily(dates[idx - 1]);
+        if (idx < dates.length - 1) renderDaily(dates[idx + 1]);
       });
       document.getElementById('nextDay')?.addEventListener('click', () => {
         const dates = [...new Set(NEWS_DATA.map(d => d.day))].sort((a,b) => b.localeCompare(a));
