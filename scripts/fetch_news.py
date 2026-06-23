@@ -176,18 +176,75 @@ const TAG_I18N = {
 if __name__ == "__main__":
     print("🤖 Fetching AI news...")
     
-    all_items = []
+    # Load existing data.js (keep items from last 7 days)
+    existing_items = []
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    try:
+        with open("js/data.js", "r", encoding="utf-8") as f:
+            existing_raw = f.read()
+        # Simple extraction of existing items (parse the JS array)
+        import re
+        day_blocks = re.findall(r"day:\s*'([\d-]+)',\s*items:\s*\[(.*?)\]", existing_raw, re.DOTALL)
+        for day_str, items_str in day_blocks:
+            try:
+                day_dt = datetime.strptime(day_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                if day_dt >= cutoff:
+                    titles = re.findall(r"title:\s*'([^']*)'", items_str)
+                    descs = re.findall(r"desc:\s*'([^']*)'", items_str)
+                    sources = re.findall(r"source:\s*'([^']*)'", items_str)
+                    heats = re.findall(r"heat:\s*(\d+)", items_str)
+                    urls = re.findall(r"url:\s*'([^']*)'", items_str)
+                    times = re.findall(r"time:\s*'([^']*)'", items_str)
+                    tags_all = re.findall(r"tags:\s*\[(.*?)\]", items_str)
+                    for i in range(len(titles)):
+                        tags_list = ["model"]
+                        if i < len(tags_all):
+                            tags_list = [t.strip().strip("'\"") for t in tags_all[i].split(",")]
+                        existing_items.append({
+                            "title": titles[i] if i < len(titles) else "",
+                            "desc": descs[i] if i < len(descs) else "",
+                            "source": sources[i] if i < len(sources) else "AI",
+                            "heat": int(heats[i]) if i < len(heats) else 70,
+                            "url": urls[i] if i < len(urls) else "#",
+                            "time": times[i] if i < len(times) else "00:00",
+                            "day": day_str,
+                            "tags": tags_list,
+                        })
+            except: pass
+        print(f"  Loaded {len(existing_items)} existing items from last 7 days")
+    except FileNotFoundError:
+        print("  No existing data.js found")
+    except Exception as e:
+        print(f"  Error loading existing data: {e}")
+    
+    # Fetch new items
+    all_items = list(existing_items)  # start with existing
+    existing_urls = {item.get("url", "") for item in existing_items}
+    
     for fetcher in [get_hackernews, get_gihub_trending, get_arxiv]:
         try:
             items = fetcher()
             if items:
-                print(f"  Got {len(items)} items from {fetcher.__name__}")
-                all_items.extend(items)
+                new_count = 0
+                for item in items:
+                    if item.get("url", "") not in existing_urls:
+                        all_items.append(item)
+                        existing_urls.add(item.get("url", ""))
+                        new_count += 1
+                print(f"  +{new_count} new from {fetcher.__name__}")
         except Exception as e:
             print(f"  {fetcher.__name__} failed: {e}")
     
     if not all_items:
         print("  Using fallback news data")
+        all_items = get_placeholder_news()
+    
+    # Sort by day (newest first), then by time within day
+    all_items.sort(key=lambda x: (x.get("day", ""), x.get("time", "")), reverse=True)
+    
+    # Keep only last 7 days
+    cutoff_str = cutoff.strftime("%Y-%m-%d")
+    all_items = [item for item in all_items if item.get("day", "") >= cutoff_str]
     
     content = build_data_js(all_items)
     
