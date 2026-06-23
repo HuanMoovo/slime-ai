@@ -1,83 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
     <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8b5cf6"/>
-      <stop offset="40%" stop-color="#a78bfa"/>
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
       <stop offset="100%" stop-color="#6d28d9"/>
     </linearGradient>
-    <linearGradient id="sg2" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#c4b5fd"/>
+    <linearGradient id="sg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="sg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
-    </linearGradient>
-    <filter id="g">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
   <!-- Shadow -->
-  <ellipse cx="70" cy="122" rx="42" ry="6" fill="rgba(0,0,0,0.1)"/>
+  <ellipse cx="60" cy="105" rx="30" ry="5" fill="#1a1a2e" opacity="0.15"/>
 
-  <!-- Body - anthropomorphic teardrop/shield shape -->
-  <path d="M70 22 
-           C52 22 38 32 32 50 
-           C26 68 28 85 34 98 
-           C38 106 44 112 52 116 
-           C58 119 64 120 70 120 
-           C76 120 82 119 88 116 
-           C96 112 102 106 106 98 
-           C112 85 114 68 108 50 
-           C102 32 88 22 70 22Z" 
-        fill="url(#sg)" filter="url(#g)"/>
+  <!-- Body - geometric slime blob -->
+  <path d="M60 18 
+           C45 18 32 28 28 42 
+           C24 56 25 70 30 80 
+           C33 86 38 90 44 93 
+           C50 96 55 97 60 97 
+           C65 97 70 96 76 93 
+           C82 90 87 86 90 80 
+           C95 70 96 56 92 42 
+           C88 28 75 18 60 18Z" 
+        fill="url(#sg)"/>
 
-  <!-- Inner glow overlay -->
-  <path d="M70 28 C56 28 44 36 38 52 C32 68 34 82 38 94 C42 102 50 108 60 112 C66 108 74 98 78 85 C68 88 56 82 50 72 C44 62 46 48 56 40 C62 35 68 32 76 30Z" fill="url(#sg3)"/>
+  <!-- Body highlight top -->
+  <ellipse cx="60" cy="30" rx="22" ry="10" fill="url(#sg2)"/>
 
-  <!-- Left eye - big, cute anime-style -->
-  <ellipse cx="55" cy="62" rx="14" ry="16" fill="#1a1a2e"/>
-  <ellipse cx="55" cy="62" rx="12" ry="14" fill="#f0f0ff"/>
-  <!-- Iris -->
-  <ellipse cx="55" cy="62" rx="8" ry="10" fill="#8b5cf6"/>
-  <ellipse cx="53" cy="60" rx="6" ry="7" fill="#a78bfa"/>
-  <!-- Highlight -->
-  <ellipse cx="50" cy="56" rx="4" ry="5" fill="#ffffff" opacity="0.9"/>
-  <ellipse cx="58" cy="67" rx="2" ry="2.5" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Drip drops -->
+  <ellipse cx="38" cy="92" rx="3" ry="5" fill="#7c3aed"/>
+  <ellipse cx="82" cy="90" rx="2.5" ry="4" fill="#7c3aed"/>
+  <circle cx="60" cy="100" r="2" fill="#7c3aed" opacity="0.5"/>
 
-  <!-- Right eye -->
-  <ellipse cx="85" cy="62" rx="14" ry="16" fill="#1a1a2e"/>
-  <ellipse cx="85" cy="62" rx="12" ry="14" fill="#f0f0ff"/>
-  <!-- Iris -->
-  <ellipse cx="85" cy="62" rx="8" ry="10" fill="#8b5cf6"/>
-  <ellipse cx="83" cy="60" rx="6" ry="7" fill="#a78bfa"/>
-  <!-- Highlight -->
-  <ellipse cx="80" cy="56" rx="4" ry="5" fill="#ffffff" opacity="0.9"/>
-  <ellipse cx="88" cy="67" rx="2" ry="2.5" fill="#1a1a2e" opacity="0.15"/>
+  <!-- Left eye - circle -->
+  <circle cx="48" cy="56" r="10" fill="#1a1a2e"/>
+  <circle cx="48" cy="56" r="8" fill="#f0f0ff"/>
+  <circle cx="48" cy="56" r="5" fill="#8b5cf6"/>
+  <circle cx="46" cy="54" r="3.5" fill="#c4b5fd"/>
+  <circle cx="44" cy="52" r="2" fill="#ffffff" opacity="0.9"/>
 
-  <!-- Eyebrows - artistic stylized -->
-  <path d="M45 48 Q50 43 62 46" fill="none" stroke="#4c1d95" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M78 46 Q90 43 95 48" fill="none" stroke="#4c1d95" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Right eye - circle -->
+  <circle cx="72" cy="56" r="10" fill="#1a1a2e"/>
+  <circle cx="72" cy="56" r="8" fill="#f0f0ff"/>
+  <circle cx="72" cy="56" r="5" fill="#8b5cf6"/>
+  <circle cx="70" cy="54" r="3.5" fill="#c4b5fd"/>
+  <circle cx="68" cy="52" r="2" fill="#ffffff" opacity="0.9"/>
 
-  <!-- Blush -->
-  <ellipse cx="40" cy="78" rx="8" ry="4" fill="#ec4899" opacity="0.2"/>
-  <ellipse cx="100" cy="78" rx="8" ry="4" fill="#ec4899" opacity="0.2"/>
+  <!-- Blush - circles -->
+  <circle cx="38" cy="68" r="4" fill="#ec4899" opacity="0.2"/>
+  <circle cx="82" cy="68" r="4" fill="#ec4899" opacity="0.2"/>
 
-  <!-- Mouth - gentle smile with teeth hint -->
-  <path d="M62 82 Q70 92 78 82" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round"/>
+  <!-- Mouth - gentle arc -->
+  <path d="M54 72 Q60 78 66 72" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Tiny sparkle -->
-  <circle cx="28" cy="38" r="2" fill="#c4b5fd" opacity="0.7"/>
-  <circle cx="112" cy="38" r="2" fill="#c4b5fd" opacity="0.7"/>
-  <circle cx="70" cy="28" r="1.5" fill="#ddd6fe" opacity="0.5"/>
-
-  <!-- Small hands/arms -->
-  <path d="M30 82 Q22 78 18 84" fill="none" stroke="url(#sg2)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M110 82 Q118 78 122 84" fill="none" stroke="url(#sg2)" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Little feet nubbins -->
-  <ellipse cx="52" cy="119" rx="10" ry="4" fill="#7c3aed"/>
-  <ellipse cx="88" cy="119" rx="10" ry="4" fill="#7c3aed"/>
+  <!-- Sparkles -->
+  <circle cx="28" cy="32" r="1.5" fill="#ddd6fe" opacity="0.6"/>
+  <circle cx="92" cy="30" r="1.5" fill="#ddd6fe" opacity="0.6"/>
+  <circle cx="60" cy="22" r="1" fill="#ede9fe" opacity="0.4"/>
 </svg>
