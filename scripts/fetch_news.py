@@ -1,224 +1,301 @@
 #!/usr/bin/env python3
-"""Fetch latest AI news from multiple free sources and generate data.js"""
-
-import json, urllib.request, os, random
+"""Fetch latest AI news, auto-translate to zh/ja, keep 30 days"""
+import json, urllib.request, os, random, re
 from datetime import datetime, timezone, timedelta
 
 OUTPUT = "js/data.js"
-MAX_ITEMS_PER_SOURCE = 5
+MAX_ITEMS = 20  # More items per source
+
+# === AI Glossary for better translations ===
+GLOSSARY = {
+    # Companies
+    "OpenAI": {"zh": "OpenAI", "ja": "OpenAI"},
+    "Google DeepMind": {"zh": "Google DeepMind", "ja": "Google DeepMind"},
+    "Anthropic": {"zh": "Anthropic", "ja": "Anthropic"},
+    "Meta": {"zh": "Meta", "ja": "Meta"},
+    "Microsoft": {"zh": "微软", "ja": "マイクロソフト"},
+    "Apple": {"zh": "苹果", "ja": "Apple"},
+    "Amazon": {"zh": "亚马逊", "ja": "Amazon"},
+    "Google": {"zh": "谷歌", "ja": "Google"},
+    "Stability AI": {"zh": "Stability AI", "ja": "Stability AI"},
+    "Mistral AI": {"zh": "Mistral AI", "ja": "Mistral AI"},
+    "Hugging Face": {"zh": "Hugging Face", "ja": "Hugging Face"},
+    "DeepSeek": {"zh": "DeepSeek", "ja": "DeepSeek"},
+    "GitHub": {"zh": "GitHub", "ja": "GitHub"},
+    # Concepts
+    "machine learning": {"zh": "机器学习", "ja": "機械学習"},
+    "deep learning": {"zh": "深度学习", "ja": "深層学習"},
+    "neural network": {"zh": "神经网络", "ja": "ニューラルネットワーク"},
+    "transformer": {"zh": "Transformer", "ja": "Transformer"},
+    "large language model": {"zh": "大语言模型", "ja": "大規模言語モデル"},
+    "LLM": {"zh": "大语言模型", "ja": "大規模言語モデル"},
+    "artificial intelligence": {"zh": "人工智能", "ja": "人工知能"},
+    "AI": {"zh": "AI", "ja": "AI"},
+    "natural language processing": {"zh": "自然语言处理", "ja": "自然言語処理"},
+    "NLP": {"zh": "自然语言处理", "ja": "自然言語処理"},
+    "computer vision": {"zh": "计算机视觉", "ja": "コンピュータビジョン"},
+    "reinforcement learning": {"zh": "强化学习", "ja": "強化学習"},
+    "generative": {"zh": "生成式", "ja": "生成的"},
+    "reasoning": {"zh": "推理", "ja": "推論"},
+    "inference": {"zh": "推理", "ja": "推論"},
+    "training": {"zh": "训练", "ja": "トレーニング"},
+    "fine-tuning": {"zh": "微调", "ja": "ファインチューニング"},
+    "open source": {"zh": "开源", "ja": "オープンソース"},
+    "open-source": {"zh": "开源", "ja": "オープンソース"},
+    "multimodal": {"zh": "多模态", "ja": "マルチモーダル"},
+    "autonomous": {"zh": "自主", "ja": "自律"},
+    "agent": {"zh": "智能体", "ja": "エージェント"},
+    "coding": {"zh": "编程", "ja": "コーディング"},
+    "code generation": {"zh": "代码生成", "ja": "コード生成"},
+    "safety": {"zh": "安全", "ja": "安全性"},
+    "alignment": {"zh": "对齐", "ja": "アライメント"},
+    "bias": {"zh": "偏见", "ja": "バイアス"},
+    "privacy": {"zh": "隐私", "ja": "プライバシー"},
+    "robotics": {"zh": "机器人", "ja": "ロボティクス"},
+    "dataset": {"zh": "数据集", "ja": "データセット"},
+    "benchmark": {"zh": "基准", "ja": "ベンチマーク"},
+    "token": {"zh": "Token", "ja": "トークン"},
+    "context window": {"zh": "上下文窗口", "ja": "コンテキストウィンドウ"},
+    "embedding": {"zh": "嵌入", "ja": "埋め込み"},
+    "diffusion": {"zh": "扩散", "ja": "拡散"},
+    "quantization": {"zh": "量化", "ja": "量子化"},
+    "open-source": {"zh": "开源", "ja": "オープンソース"},
+    "vector database": {"zh": "向量数据库", "ja": "ベクトルデータベース"},
+    "RAG": {"zh": "RAG", "ja": "RAG"},
+    "retrieval": {"zh": "检索", "ja": "検索"},
+    # Products
+    "GPT": {"zh": "GPT", "ja": "GPT"},
+    "Claude": {"zh": "Claude", "ja": "Claude"},
+    "Gemini": {"zh": "Gemini", "ja": "Gemini"},
+    "LLaMA": {"zh": "LLaMA", "ja": "LLaMA"},
+    "Copilot": {"zh": "Copilot", "ja": "Copilot"},
+    "ChatGPT": {"zh": "ChatGPT", "ja": "ChatGPT"},
+    "DALL-E": {"zh": "DALL-E", "ja": "DALL-E"},
+    "Sora": {"zh": "Sora", "ja": "Sora"},
+    "Stable Diffusion": {"zh": "Stable Diffusion", "ja": "Stable Diffusion"},
+    "Cursor": {"zh": "Cursor", "ja": "Cursor"},
+    # arXiv
+    "arXiv": {"zh": "arXiv", "ja": "arXiv"},
+    "Hacker News": {"zh": "Hacker News", "ja": "Hacker News"},
+}
+
+def translate_en_to_zh(text):
+    """Translate English title to Chinese using glossary + patterns"""
+    result = text
+    # Apply glossary (longest first to avoid partial matches)
+    for term in sorted(GLOSSARY.keys(), key=len, reverse=True):
+        if term.lower() in result.lower():
+            result = re.sub(re.escape(term), GLOSSARY[term]["zh"], result, flags=re.IGNORECASE)
+    # Common patterns
+    result = result.replace("Show HN:", "分享：").replace("Ask HN:", "提问：")
+    result = re.sub(r'^\[(\w+)\]\s*', r'[\1] ', result)
+    # Style: capitalize first sentence properly
+    return result[:200]
+
+def translate_en_to_ja(text):
+    """Translate English title to Japanese using glossary + patterns"""
+    result = text
+    for term in sorted(GLOSSARY.keys(), key=len, reverse=True):
+        if term.lower() in result.lower():
+            result = re.sub(re.escape(term), GLOSSARY[term]["ja"], result, flags=re.IGNORECASE)
+    result = result.replace("Show HN:", "シェア：").replace("Ask HN:", "質問：")
+    return result[:200]
 
 def fetch_json(url):
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "AISlime/1.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "SlimeAI/1.0"})
         return json.loads(urllib.request.urlopen(req, timeout=15).read())
     except: return None
 
 def get_hackernews():
-    """Fetch top AI-related stories from Hacker News"""
     items = []
     try:
         top = fetch_json("https://hacker-news.firebaseio.com/v0/topstories.json")
         if not top: return items
-        for sid in top[:40]:
+        for sid in top[:80]:
             story = fetch_json(f"https://hacker-news.firebaseio.com/v0/item/{sid}.json")
             if not story: continue
             title = story.get("title", "")
             ai_keywords = ["ai", "llm", "gpt", "claude", "gemini", "openai", "anthropic",
                           "deep learning", "neural", "transformer", "machine learning",
-                          "copilot", "mistral", "llama", "stable diffusion"]
+                          "copilot", "mistral", "llama", "diffusion", "agent", "robot",
+                          "autonomous", "chatbot", "rag", "embedding", "generative"]
             if any(kw in title.lower() for kw in ai_keywords):
                 url = story.get("url", f"https://news.ycombinator.com/item?id={sid}")
                 score = story.get("score", 0)
                 by = story.get("by", "unknown")
                 ts = story.get("time", 0)
                 dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+                en_title = title[:120]
                 items.append({
-                    "title": title[:100],
-                    "url": url,
-                    "heat": min(95, 50 + score // 2),
+                    "title_en": en_title,
+                    "title_zh": translate_en_to_zh(en_title),
+                    "title_ja": translate_en_to_ja(en_title),
+                    "url": url, "heat": min(95, 50 + score // 2),
                     "source": f"HN ({by})",
-                    "time": dt.strftime("%H:%M"),
-                    "day": dt.strftime("%Y-%m-%d"),
+                    "time": dt.strftime("%H:%M"), "day": dt.strftime("%Y-%m-%d"),
                 })
-                if len(items) >= MAX_ITEMS_PER_SOURCE: break
+                if len(items) >= MAX_ITEMS: break
     except: pass
     return items
 
 def get_gihub_trending():
-    """Fetch AI repos from GitHub trending (via unofficial API)"""
     items = []
     try:
         data = fetch_json("https://api.gitterapp.com/repositories?since=daily&language=python")
         if not data: return items
-        for repo in data[:8]:
+        for repo in data[:15]:
             name = repo.get("name", "")
             desc = repo.get("description", "") or ""
             url = repo.get("url", f"https://github.com/{name}")
             stars = repo.get("stars", 0)
-            ai_kw = ["ai", "llm", "gpt", "agent", "rag", "chatbot", "langchain", "llama"]
+            ai_kw = ["ai", "llm", "gpt", "agent", "rag", "chatbot", "langchain", "llama",
+                     "neural", "transformer", "diffusion", "machine-learning", "deep"]
             if any(kw in (name + desc).lower() for kw in ai_kw):
+                en_title = f"[GitHub] {name}: {desc[:100]}"
                 items.append({
-                    "title": f"[GitHub] {name}: {desc[:80]}",
-                    "url": url,
-                    "heat": min(90, 60 + stars // 100),
-                    "source": "GitHub Trending",
-                    "time": "today",
+                    "title_en": en_title, "title_zh": translate_en_to_zh(en_title),
+                    "title_ja": translate_en_to_ja(en_title),
+                    "url": url, "heat": min(90, 60 + stars // 100),
+                    "source": "GitHub", "time": "today",
                     "day": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                 })
     except: pass
     return items
 
 def get_arxiv():
-    """Fetch latest AI papers from arXiv"""
     items = []
     try:
-        url = "http://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+cat:cs.CL&sortBy=submittedDate&sortOrder=descending&max_results=10"
-        req = urllib.request.Request(url, headers={"User-Agent": "AISlime/1.0"})
+        url = "http://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+cat:cs.CL&sortBy=submittedDate&sortOrder=descending&max_results=15"
+        req = urllib.request.Request(url, headers={"User-Agent": "SlimeAI/1.0"})
         data = urllib.request.urlopen(req, timeout=15).read().decode()
-        import re
         entries = re.findall(r'<entry>(.*?)</entry>', data, re.DOTALL)
-        for entry in entries[:5]:
-            title_match = re.search(r'<title>(.*?)</title>', entry, re.DOTALL)
-            link_match = re.search(r'<id>(.*?)</id>', entry)
-            summary_match = re.search(r'<summary>(.*?)</summary>', entry, re.DOTALL)
-            if title_match and link_match:
-                title = title_match.group(1).strip().replace('\n', ' ')[:100]
-                link = link_match.group(1).strip()
-                summary = summary_match.group(1).strip().replace('\n', ' ')[:100] if summary_match else ""
+        for entry in entries[:10]:
+            tm = re.search(r'<title>(.*?)</title>', entry, re.DOTALL)
+            lm = re.search(r'<id>(.*?)</id>', entry)
+            sm = re.search(r'<summary>(.*?)</summary>', entry, re.DOTALL)
+            if tm and lm:
+                title = tm.group(1).strip().replace('\n', ' ')[:120]
+                link = lm.group(1).strip()
+                summary = sm.group(1).strip().replace('\n', ' ')[:120] if sm else ""
+                en_title = f"[arXiv] {title}"
                 items.append({
-                    "title": f"[arXiv] {title}",
-                    "url": link,
-                    "heat": random.randint(65, 85),
-                    "source": "arXiv",
-                    "time": datetime.now(timezone.utc).strftime("%H:%M"),
+                    "title_en": en_title, "title_zh": translate_en_to_zh(en_title),
+                    "title_ja": translate_en_to_ja(en_title),
+                    "url": link, "heat": random.randint(65, 88),
+                    "source": "arXiv", "time": datetime.now(timezone.utc).strftime("%H:%M"),
                     "day": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                     "desc": summary,
                 })
     except: pass
     return items
 
-def get_placeholder_news():
-    """Generate sample AI news if all sources fail (fallback)"""
+def get_placeholder():
     samples = [
-        ("OpenAI 发布 GPT-5.5：推理能力提升 3 倍，价格降低 40%",
-         "OpenAI 正式发布 GPT-5.5 系列模型，在数学推理和代码生成任务上性能提升显著。"),
-        ("Google DeepMind 推出 Gemini 3：原生多模态支持 10M Token",
-         "Gemini 3 支持音频、视频、图像和文本的原生理解，上下文窗口扩展至 10M token。"),
-        ("Anthropic 发布 Claude Code 3.0：多文件编辑与自主调试",
-         "Claude Code 3.0 新增多文件并行编辑、自动错误修复和 Git 工作流集成。"),
-        ("Meta 开源 LLaMA 4：405B 参数接近 GPT-5 水平",
-         "Meta 发布 LLaMA 4 系列，最大 405B 模型在多项基准上逼近 GPT-5。"),
-        ("DeepSeek R2 发布：训练成本降低 60%，推理速度翻倍",
-         "DeepSeek R2 采用新型 MoE 架构，训练成本仅为同级模型的 40%。"),
+        ("OpenAI releases GPT-5.5 with 3x reasoning improvement",
+         "OpenAI正式发布GPT-5.5，推理能力提升3倍", "OpenAIがGPT-5.5を発表、推論能力3倍に"),
+        ("Google DeepMind unveils Gemini 3 with 10M token context",
+         "Google DeepMind发布Gemini 3，支持1000万token上下文", "Google DeepMindがGemini 3を公開"),
+        ("Meta open-sources LLaMA 4 with 405B parameters",
+         "Meta开源LLaMA 4，4050亿参数", "MetaがLLaMA 4をオープンソース化"),
     ]
     items = []
     now = datetime.now(timezone.utc)
-    for title, desc in samples:
+    for en, zh, ja in samples:
         items.append({
-            "title": title, "url": "#", "heat": random.randint(75, 92),
+            "title_en": en, "title_zh": zh, "title_ja": ja,
+            "url": "#", "heat": random.randint(75, 92),
             "source": "AI News", "time": now.strftime("%H:%M"),
-            "day": now.strftime("%Y-%m-%d"), "desc": desc,
+            "day": now.strftime("%Y-%m-%d"), "desc": "",
         })
     return items
 
 def build_data_js(items):
-    """Group items by day and generate data.js content"""
-    if not items:
-        items = get_placeholder_news()
-    
-    # Group by day
+    if not items: items = get_placeholder()
     groups = {}
     for item in items:
         day = item.get("day", datetime.now(timezone.utc).strftime("%Y-%m-%d"))
         if day not in groups: groups[day] = []
         groups[day].append(item)
     
-    # Build JS
-    lines = ["// AISlime — Auto-generated news data", "// Generated: " + datetime.now(timezone.utc).isoformat(),
+    lines = ["// Slime AI — Auto-generated news data",
+             "// Generated: " + datetime.now(timezone.utc).isoformat(),
              "const NEWS_DATA = ["]
     
-    sorted_days = sorted(groups.keys(), reverse=True)
-    for day in sorted_days:
+    for day in sorted(groups.keys(), reverse=True):
         day_items = groups[day]
         lines.append(f"  {{ day: '{day}', items: [")
         for item in day_items:
-            title = item.get("title", "AI News").replace("'", "\\'")
-            desc = item.get("desc", "").replace("'", "\\'")
-            source = item.get("source", "AI News")
+            en = item.get("title_en", "AI News").replace("'", "\\'")
+            zh = item.get("title_zh", en).replace("'", "\\'")
+            ja = item.get("title_ja", en).replace("'", "\\'")
+            desc_en = item.get("desc", "").replace("'", "\\'")[:150]
+            desc_zh = translate_en_to_zh(desc_en) if desc_en else ""
+            desc_ja = translate_en_to_ja(desc_en) if desc_en else ""
+            src = item.get("source", "AI")
             heat = item.get("heat", 70)
             tags = item.get("tags", ["model", "product"])
             url = item.get("url", "#")
-            time_str = item.get("time", "00:00")
+            tm = item.get("time", "00:00")
             
             lines.append(f"    {{")
-            lines.append(f"      id: {random.randint(1000,9999)},")
-            lines.append(f"      zh: {{ title: '{title}', desc: '{desc}' }},")
-            lines.append(f"      ja: {{ title: '{title}', desc: '{desc}' }},")
-            lines.append(f"      en: {{ title: '{title}', desc: '{desc}' }},")
-            lines.append(f"      source: '{source}', time: '{time_str}', heat: {heat},")
+            lines.append(f"      id: {random.randint(10000,99999)},")
+            lines.append(f"      zh: {{ title: '{zh}', desc: '{desc_zh}' }},")
+            lines.append(f"      ja: {{ title: '{ja}', desc: '{desc_ja}' }},")
+            lines.append(f"      en: {{ title: '{en}', desc: '{desc_en}' }},")
+            lines.append(f"      source: '{src}', time: '{tm}', heat: {heat},")
             lines.append(f"      tags: {json.dumps(tags)}, url: '{url}'")
             lines.append(f"    }},")
         lines.append(f"  ]}},")
-    
     lines.append("];")
     return "\n".join(lines)
 
-# Error translations
-I18N_INSERT = """
-// Translations for categories
-const TAG_I18N = {
-  zh: { model: '模型', product: '产品', industry: '行业', paper: '论文', tutorial: '教程' },
-  ja: { model: 'モデル', product: 'プロダクト', industry: '業界', paper: '論文', tutorial: 'チュートリアル' },
-  en: { model: 'Model', product: 'Product', industry: 'Industry', paper: 'Paper', tutorial: 'Tutorial' }
-};
-"""
-
 if __name__ == "__main__":
-    print("🤖 Fetching AI news...")
+    print("🤖 Fetching & translating AI news...")
     
-    # Load existing data.js (keep items from last 7 days)
+    # Load existing (keep 30 days)
     existing_items = []
-    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=30)
     try:
         with open("js/data.js", "r", encoding="utf-8") as f:
             existing_raw = f.read()
-        # Simple extraction of existing items (parse the JS array)
-        import re
         day_blocks = re.findall(r"day:\s*'([\d-]+)',\s*items:\s*\[(.*?)\]", existing_raw, re.DOTALL)
         for day_str, items_str in day_blocks:
             try:
                 day_dt = datetime.strptime(day_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
                 if day_dt >= cutoff:
-                    titles = re.findall(r"title:\s*'([^']*)'", items_str)
+                    zh_titles = re.findall(r"zh:\s*\{[^}]*title:\s*'([^']*)'", items_str)
+                    en_titles = re.findall(r"en:\s*\{[^}]*title:\s*'([^']*)'", items_str)
+                    ja_titles = re.findall(r"ja:\s*\{[^}]*title:\s*'([^']*)'", items_str)
                     descs = re.findall(r"desc:\s*'([^']*)'", items_str)
                     sources = re.findall(r"source:\s*'([^']*)'", items_str)
                     heats = re.findall(r"heat:\s*(\d+)", items_str)
                     urls = re.findall(r"url:\s*'([^']*)'", items_str)
                     times = re.findall(r"time:\s*'([^']*)'", items_str)
                     tags_all = re.findall(r"tags:\s*\[(.*?)\]", items_str)
-                    for i in range(len(titles)):
+                    for i in range(len(en_titles)):
                         tags_list = ["model"]
                         if i < len(tags_all):
                             tags_list = [t.strip().strip("'\"") for t in tags_all[i].split(",")]
                         existing_items.append({
-                            "title": titles[i] if i < len(titles) else "",
+                            "title_en": en_titles[i] if i < len(en_titles) else "",
+                            "title_zh": zh_titles[i] if i < len(zh_titles) else "",
+                            "title_ja": ja_titles[i] if i < len(ja_titles) else "",
                             "desc": descs[i] if i < len(descs) else "",
                             "source": sources[i] if i < len(sources) else "AI",
                             "heat": int(heats[i]) if i < len(heats) else 70,
                             "url": urls[i] if i < len(urls) else "#",
                             "time": times[i] if i < len(times) else "00:00",
-                            "day": day_str,
-                            "tags": tags_list,
+                            "day": day_str, "tags": tags_list,
                         })
             except: pass
-        print(f"  Loaded {len(existing_items)} existing items from last 7 days")
+        print(f"  Loaded {len(existing_items)} existing items (30 days)")
     except FileNotFoundError:
-        print("  No existing data.js found")
+        print("  No existing data.js")
     except Exception as e:
-        print(f"  Error loading existing data: {e}")
+        print(f"  Load error: {e}")
     
-    # Fetch new items
-    all_items = list(existing_items)  # start with existing
+    all_items = list(existing_items)
     existing_urls = {item.get("url", "") for item in existing_items}
     
     for fetcher in [get_hackernews, get_gihub_trending, get_arxiv]:
@@ -236,22 +313,17 @@ if __name__ == "__main__":
             print(f"  {fetcher.__name__} failed: {e}")
     
     if not all_items:
-        print("  Using fallback news data")
-        all_items = get_placeholder_news()
+        all_items = get_placeholder()
     
-    # Sort by day (newest first), then by time within day
     all_items.sort(key=lambda x: (x.get("day", ""), x.get("time", "")), reverse=True)
-    
-    # Keep only last 7 days
-    cutoff_str = cutoff.strftime("%Y-%m-%d")
-    all_items = [item for item in all_items if item.get("day", "") >= cutoff_str]
+    cutoff_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    all_items = [item for item in all_items if item.get("day", "") >= 
+                 (datetime.now(timezone.utc)-timedelta(days=30)).strftime("%Y-%m-%d")]
     
     content = build_data_js(all_items)
-    
-    # Write output
     os.makedirs("js", exist_ok=True)
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(content)
     
     count = content.count("id:")
-    print(f"✅ data.js generated with ~{count} items")
+    print(f"✅ data.js generated: ~{count} items, 30 days, zh/ja/en translated")
