@@ -22,20 +22,23 @@ function initParticles() {
     reset() {
       this.x = Math.random() * w;
       this.y = Math.random() * h;
-      this.vx = (Math.random() - 0.5) * 0.4;
-      this.vy = (Math.random() - 0.5) * 0.4;
-      this.r = Math.random() * 2 + 0.5;
-      this.alpha = Math.random() * 0.4 + 0.1;
+      this.vx = (Math.random() - 0.5) * 0.3;
+      this.vy = (Math.random() - 0.5) * 0.3;
+      this.r = Math.random() * 2.5 + 0.5;
+      this.alpha = Math.random() * 0.3 + 0.05;
+      this.pulse = Math.random() * Math.PI * 2;
     }
     update() {
       this.x += this.vx; this.y += this.vy;
+      this.pulse += 0.02;
       if (this.x < 0 || this.x > w) this.vx *= -1;
       if (this.y < 0 || this.y > h) this.vy *= -1;
     }
     draw() {
+      const pulseAlpha = this.alpha * (0.6 + 0.4 * Math.sin(this.pulse));
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(139,92,246,${this.alpha})`;
+      ctx.fillStyle = `rgba(139,92,246,${pulseAlpha})`;
       ctx.fill();
     }
   }
@@ -47,11 +50,11 @@ function initParticles() {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 150) {
+        if (dist < 180) {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(139,92,246,${(1 - dist / 150) * 0.08})`;
+          ctx.strokeStyle = `rgba(139,92,246,${(1 - dist / 180) * 0.06})`;
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
