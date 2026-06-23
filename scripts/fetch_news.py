@@ -4,7 +4,99 @@ import json, urllib.request, os, random, re
 from datetime import datetime, timezone, timedelta
 
 OUTPUT = "js/data.js"
-MAX_ITEMS = 20  # More items per source
+MAX_ITEMS = 30  # More items per source
+
+# === AI Classification Tags ===
+def classify_tags(title, desc=""):
+    """Auto-classify news into categories based on keywords"""
+    text = (title + " " + desc).lower()
+    tags = []
+    
+    # Model releases
+    if any(kw in text for kw in ["releases", "launch", "unveils", "announces", "introduces", 
+                                   "发布", "推出", "开源", "model", "llm", "gpt-", "llama",
+                                   "gemini", "claude", "mistral", "deepseek", "pangu"]):
+        tags.append("model")
+    
+    # Products/tools
+    if any(kw in text for kw in ["product", "app", "tool", "platform", "service", "api",
+                                   "desktop", "mobile", "plugin", "extension",
+                                   "产品", "应用", "工具", "平台"]):
+        tags.append("product")
+    
+    # Industry/business
+    if any(kw in text for kw in ["industry", "business", "market", "investment", "funding",
+                                   "acquisition", "partnership", "revenue", "million", "billion",
+                                   "行业", "市场", "投资", "融资", "收购"]):
+        tags.append("industry")
+    
+    # Papers/research
+    if "[arxiv]" in text or any(kw in text for kw in ["paper", "research", "study", "benchmark",
+                                                        "sota", "state-of-the-art", "novel",
+                                                        "论文", "研究", "基准", "sota"]):
+        tags.append("paper")
+    
+    # Tutorials/practice
+    if any(kw in text for kw in ["tutorial", "guide", "how to", "best practice", "教程",
+                                   "指南", "实践", "部署", "工程"]):
+        tags.append("tutorial")
+    
+    # Agents
+    if any(kw in text for kw in ["agent", "autonomous", "multi-agent", "tool use", "function calling",
+                                   "智能体", "自主", "多智能体", "mcp"]):
+        tags.append("agent")
+    
+    # Open source
+    if any(kw in text for kw in ["open source", "open-source", "github", "hugging face",
+                                   "开源", "github"]):
+        tags.append("open-source")
+    
+    # Safety/alignment
+    if any(kw in text for kw in ["safety", "alignment", "bias", "privacy", "security",
+                                   "jailbreak", "hallucination", "ethics",
+                                   "安全", "对齐", "偏见", "隐私", "道德"]):
+        tags.append("safety")
+    
+    # Multimodal
+    if any(kw in text for kw in ["multimodal", "vision", "image", "video", "audio", "speech",
+                                   "多模态", "视觉", "图像", "视频", "音频", "语音"]):
+        tags.append("multimodal")
+    
+    # Coding
+    if any(kw in text for kw in ["code", "coding", "programming", "debug", "copilot", "cursor",
+                                   "编程", "代码", "调试"]):
+        tags.append("coding")
+    
+    # Robotics
+    if any(kw in text for kw in ["robot", "robotics", "humanoid", "autonomous driving",
+                                   "机器人", "人形", "自动驾驶"]):
+        tags.append("robotics")
+    
+    # Video generation
+    if any(kw in text for kw in ["video generation", "sora", "runway", "stable diffusion",
+                                   "video", "film", "动画", "视频生成"]):
+        tags.append("video")
+    
+    # Speech/audio
+    if any(kw in text for kw in ["tts", "speech", "voice", "audio", "music generation",
+                                   "语音", "音频", "音乐"]):
+        tags.append("speech")
+    
+    # Inference/deployment
+    if any(kw in text for kw in ["inference", "deploy", "training", "fine-tune", "quantization",
+                                   "推理", "部署", "训练", "微调", "量化"]):
+        tags.append("deployment")
+    
+    # Policy/regulation
+    if any(kw in text for kw in ["regulation", "policy", "law", "compliance", "governance",
+                                   "监管", "政策", "法律", "合规"]):
+        tags.append("policy")
+    
+    # Default fallback
+    if not tags:
+        tags.append("model")
+    
+    return tags[:4]  # Max 4 tags
 
 # === AI Glossary for better translations ===
 GLOSSARY = {
@@ -134,6 +226,7 @@ def get_hackernews():
                     "url": url, "heat": min(95, 50 + score // 2),
                     "source": f"HN ({by})",
                     "time": dt.strftime("%H:%M"), "day": dt.strftime("%Y-%m-%d"),
+                    "tags": classify_tags(en_title),
                 })
                 if len(items) >= MAX_ITEMS: break
     except: pass
