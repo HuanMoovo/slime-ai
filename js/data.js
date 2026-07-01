@@ -1,155 +1,291 @@
 // Slime AI — Auto-generated news data
-// Generated: 2026-07-01T03:27:06.451947+00:00
+// Generated: 2026-07-01T09:39:16.602860+00:00
 const NEWS_DATA = [
   { day: '2026-07-01', items: [
     {
-      id: 71095,
+      id: 51639,
+      zh: { title: '[arXiv] Introspective Coupling: Self-Explanation 训练 Tracks Behavioral Change Despite Fixed Supervision', desc: 'When does 训练 language models (LMs) to generate explanations of their predictions yield fAIthful introspection, rat' },
+      ja: { title: '[arXiv] Introspective Coupling: Self-Explanation トレーニング Tracks Behavioral Change Despite Fixed Supervision', desc: 'When does トレーニング language models (LMs) to generate explanations of their predictions yield fAIthful introspection, rat' },
+      en: { title: '[arXiv] Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision', desc: 'When does training language models (LMs) to generate explanations of their predictions yield faithful introspection, rat' },
+      source: 'arXiv', time: '09:39', heat: 66,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.32038v1'
+    },
+    {
+      id: 10299,
+      zh: { title: '[arXiv] QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon 大语言模型 智能体s', desc: '大语言模型 智能体s increasingly act over long horizons, where a single trajectory can contAIn hundreds or thousands of actions. ' },
+      ja: { title: '[arXiv] QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon 大規模言語モデル エージェントs', desc: '大規模言語モデル エージェントs increasingly act over long horizons, where a single trajectory can contAIn hundreds or thousands of actions. ' },
+      en: { title: '[arXiv] QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents', desc: 'LLM agents increasingly act over long horizons, where a single trajectory can contain hundreds or thousands of actions. ' },
+      source: 'arXiv', time: '09:39', heat: 68,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.32034v1'
+    },
+    {
+      id: 99990,
+      zh: { title: '[arXiv] 强化学习 with Metacognitive Feedback Elicits FAIthful UncertAInty Expression in 大语言模型s', desc: 'Metacognition is a critical component of intelligence that describes the ability to monitor and regulate one\'s own cogni' },
+      ja: { title: '[arXiv] 強化学習 with Metacognitive Feedback Elicits FAIthful UncertAInty Expression in 大規模言語モデルs', desc: 'Metacognition is a critical component of intelligence that describes the ability to monitor and regulate one\'s own cogni' },
+      en: { title: '[arXiv] Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs', desc: 'Metacognition is a critical component of intelligence that describes the ability to monitor and regulate one\'s own cogni' },
+      source: 'arXiv', time: '09:39', heat: 73,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.32032v1'
+    },
+    {
+      id: 82176,
+      zh: { title: '[arXiv] When 大语言模型s Read Tables Carelessly: Measuring and Reducing Data Referencing Errors', desc: 'While 大语言模型s (大语言模型s) perform well on table tasks, they still make data referencing errors (DREs), i.e., in' },
+      ja: { title: '[arXiv] When 大規模言語モデルs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors', desc: 'While 大規模言語モデルs (大規模言語モデルs) perform well on table tasks, they still make data referencing errors (DREs), i.e., in' },
+      en: { title: '[arXiv] When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors', desc: 'While large language models (LLMs) perform well on table tasks, they still make data referencing errors (DREs), i.e., in' },
+      source: 'arXiv', time: '09:39', heat: 75,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.32029v1'
+    },
+    {
+      id: 31163,
+      zh: { title: '[arXiv] MECoBench: A Systematic Study of 多模态 智能体 Collaboration in Embodied Environments', desc: 'Recent 多模态 大语言模型s (M大语言模型s) have strong potential as embodied 智能体s, but their ability to collabora' },
+      ja: { title: '[arXiv] MECoBench: A Systematic Study of マルチモーダル エージェント Collaboration in Embodied Environments', desc: 'Recent マルチモーダル 大規模言語モデルs (M大規模言語モデルs) have strong potential as embodied エージェントs, but their ability to collabora' },
+      en: { title: '[arXiv] MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments', desc: 'Recent multimodal large language models (MLLMs) have strong potential as embodied agents, but their ability to collabora' },
+      source: 'arXiv', time: '09:39', heat: 81,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.31966v1'
+    },
+    {
+      id: 82968,
+      zh: { title: '[arXiv] CHERRY: Compressed Hierarchical Experts with Recurrent Representational Yield', desc: 'We study three complementary techniques for 训练 compute-efficient language models.   (1) Selective supervision and ' },
+      ja: { title: '[arXiv] CHERRY: Compressed Hierarchical Experts with Recurrent Representational Yield', desc: 'We study three complementary techniques for トレーニング compute-efficient language models.   (1) Selective supervision and ' },
+      en: { title: '[arXiv] CHERRY: Compressed Hierarchical Experts with Recurrent Representational Yield', desc: 'We study three complementary techniques for training compute-efficient language models.   (1) Selective supervision and ' },
+      source: 'arXiv', time: '09:39', heat: 68,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.31796v1'
+    },
+    {
+      id: 33375,
+      zh: { title: '[arXiv] STEB: Style Text 嵌入 基准', desc: 'While semantic 嵌入s are rigorously evaluated on the Massive Text 嵌入 基准, the evaluation of style embe' },
+      ja: { title: '[arXiv] STEB: Style Text 埋め込み ベンチマーク', desc: 'While semantic 埋め込みs are rigorously evaluated on the Massive Text 埋め込み ベンチマーク, the evaluation of style embe' },
+      en: { title: '[arXiv] STEB: Style Text Embedding Benchmark', desc: 'While semantic embeddings are rigorously evaluated on the Massive Text Embedding Benchmark, the evaluation of style embe' },
+      source: 'arXiv', time: '09:39', heat: 72,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.31741v1'
+    },
+    {
+      id: 41957,
+      zh: { title: '[arXiv] Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue', desc: 'In collaborative dialogue, shared perception does not guarantee shared interpretation. Mutual understanding must be esta' },
+      ja: { title: '[arXiv] Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue', desc: 'In collaborative dialogue, shared perception does not guarantee shared interpretation. Mutual understanding must be esta' },
+      en: { title: '[arXiv] Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue', desc: 'In collaborative dialogue, shared perception does not guarantee shared interpretation. Mutual understanding must be esta' },
+      source: 'arXiv', time: '09:39', heat: 73,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.31719v1'
+    },
+    {
+      id: 34043,
+      zh: { title: '[arXiv] Cross-lingual Relation Extraction with 大语言模型s: Zero-Shot, Few-Shot, and Fine-Tuned Evaluation on Romanian', desc: 'Relation extraction (RE) for low-resource languages is typically constrAIned by the lack of annotated corpora. We invest' },
+      ja: { title: '[arXiv] Cross-lingual Relation Extraction with 大規模言語モデルs: Zero-Shot, Few-Shot, and Fine-Tuned Evaluation on Romanian', desc: 'Relation extraction (RE) for low-resource languages is typically constrAIned by the lack of annotated corpora. We invest' },
+      en: { title: '[arXiv] Cross-lingual Relation Extraction with Large Language Models: Zero-Shot, Few-Shot, and Fine-Tuned Evaluation on Romanian', desc: 'Relation extraction (RE) for low-resource languages is typically constrained by the lack of annotated corpora. We invest' },
+      source: 'arXiv', time: '09:39', heat: 65,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.31718v1'
+    },
+    {
+      id: 48571,
+      zh: { title: '[arXiv] RCT: A Robot-Collected Touch-Vision-Language 数据集 for Tactile Generalization', desc: 'For robots manipulating open-world objects, tactile representations must generalize to unseen materials. We introduce RC' },
+      ja: { title: '[arXiv] RCT: A Robot-Collected Touch-Vision-Language データセット for Tactile Generalization', desc: 'For robots manipulating open-world objects, tactile representations must generalize to unseen materials. We introduce RC' },
+      en: { title: '[arXiv] RCT: A Robot-Collected Touch-Vision-Language Dataset for Tactile Generalization', desc: 'For robots manipulating open-world objects, tactile representations must generalize to unseen materials. We introduce RC' },
+      source: 'arXiv', time: '09:39', heat: 82,
+      tags: ["model", "product"], url: 'http://arxiv.org/abs/2606.31694v1'
+    },
+    {
+      id: 56391,
+      zh: { title: 'SkillHone: A Harness for Continual 智能体 Skill Evolution Through Persistent Decision History', desc: '' },
+      ja: { title: 'SkillHone: A Harness for Continual エージェント Skill Evolution Through Persistent Decision History', desc: '' },
+      en: { title: 'SkillHone: A Harness for Continual Agent Skill Evolution Through Persistent Decision History', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 85,
+      tags: ["agent"], url: 'https://huggingface.co/papers/2606.08671'
+    },
+    {
+      id: 32964,
+      zh: { title: 'DataEvolver: Self-Evolving Multi-智能体 Data Construction for Text-Rich Image Generation', desc: '' },
+      ja: { title: 'DataEvolver: Self-Evolving Multi-エージェント Data Construction for Text-Rich Image Generation', desc: '' },
+      en: { title: 'DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 68,
+      tags: ["agent", "multimodal"], url: 'https://huggingface.co/papers/2606.31537'
+    },
+    {
+      id: 94049,
+      zh: { title: 'MuSViT: A Foundation Vision Model for Sheet Music Representation', desc: '' },
+      ja: { title: 'MuSViT: A Foundation Vision Model for Sheet Music Representation', desc: '' },
+      en: { title: 'MuSViT: A Foundation Vision Model for Sheet Music Representation', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 72,
+      tags: ["model", "multimodal"], url: 'https://huggingface.co/papers/2606.31811'
+    },
+    {
+      id: 96708,
+      zh: { title: 'Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views', desc: '' },
+      ja: { title: 'Scenes as Objects, Not Primitives: Instance-Structured 3D トークンization from Unposed Views', desc: '' },
+      en: { title: 'Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 66,
+      tags: ["model"], url: 'https://huggingface.co/papers/2606.29513'
+    },
+    {
+      id: 43276,
+      zh: { title: 'RedVox: 安全 and FAIrness Gaps in Speech Models Across Languages', desc: '' },
+      ja: { title: 'RedVox: 安全性 and FAIrness Gaps in Speech Models Across Languages', desc: '' },
+      en: { title: 'RedVox: Safety and Fairness Gaps in Speech Models Across Languages', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 74,
+      tags: ["model", "safety", "multimodal", "speech"], url: 'https://huggingface.co/papers/2606.26968'
+    },
+    {
+      id: 72773,
+      zh: { title: 'GEAR: Guided End-to-End AutoRegression for Image Synthesis', desc: '' },
+      ja: { title: 'GEAR: Guided End-to-End AutoRegression for Image Synthesis', desc: '' },
+      en: { title: 'GEAR: Guided End-to-End AutoRegression for Image Synthesis', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 66,
+      tags: ["tutorial", "multimodal"], url: 'https://huggingface.co/papers/2606.32039'
+    },
+    {
+      id: 89093,
+      zh: { title: 'Little BrAIns, Big Feats: Exploring Compact Language Models', desc: '' },
+      ja: { title: 'Little BrAIns, Big Feats: Exploring Compact Language Models', desc: '' },
+      en: { title: 'Little Brains, Big Feats: Exploring Compact Language Models', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 69,
+      tags: ["model"], url: 'https://huggingface.co/papers/2606.30062'
+    },
+    {
+      id: 23669,
+      zh: { title: 'Multi-Block 扩散 Language Models', desc: '' },
+      ja: { title: 'Multi-Block 拡散 Language Models', desc: '' },
+      en: { title: 'Multi-Block Diffusion Language Models', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 65,
+      tags: ["model"], url: 'https://huggingface.co/papers/2606.29215'
+    },
+    {
+      id: 23199,
+      zh: { title: '强化学习 with Metacognitive Feedback Elicits FAIthful UncertAInty Expression in 大语言模型s', desc: '' },
+      ja: { title: '強化学習 with Metacognitive Feedback Elicits FAIthful UncertAInty Expression in 大規模言語モデルs', desc: '' },
+      en: { title: 'Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 85,
+      tags: ["model"], url: 'https://huggingface.co/papers/2606.32032'
+    },
+    {
+      id: 26303,
+      zh: { title: 'TerraDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive', desc: '' },
+      ja: { title: 'TerraDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive', desc: '' },
+      en: { title: 'TerraDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive', desc: '' },
+      source: 'Hugging Face', time: '09:39', heat: 67,
+      tags: ["multimodal"], url: 'https://huggingface.co/papers/2606.31029'
+    },
+    {
+      id: 54352,
+      zh: { title: '金融AI武道大会开赛！四道业务真题，出题人：猜不到最优解', desc: '' },
+      ja: { title: '金融AI武道大会开赛！四道业务真题，出题人：猜不到最优解', desc: '' },
+      en: { title: '金融AI武道大会开赛！四道业务真题，出题人：猜不到最优解', desc: '' },
+      source: '量子位', time: '09:39', heat: 69,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/07/441246.html'
+    },
+    {
+      id: 56791,
+      zh: { title: 'OpenSquilla 发布 0.4.0：AI 写代码首次能“自我验证”', desc: '' },
+      ja: { title: 'OpenSquilla 发布 0.4.0：AI 写代码首次能“自我验证”', desc: '' },
+      en: { title: 'OpenSquilla 发布 0.4.0：AI 写代码首次能“自我验证”', desc: '' },
+      source: '量子位', time: '09:39', heat: 79,
+      tags: ["model", "coding"], url: 'https://www.qbitai.com/2026/07/441240.html'
+    },
+    {
+      id: 13389,
+      zh: { title: '群核科技三项成果入选ECCV 2026，联手英伟达等探索物理AI仿真平台', desc: '' },
+      ja: { title: '群核科技三项成果入选ECCV 2026，联手英伟达等探索物理AI仿真平台', desc: '' },
+      en: { title: '群核科技三项成果入选ECCV 2026，联手英伟达等探索物理AI仿真平台', desc: '' },
+      source: '量子位', time: '09:39', heat: 71,
+      tags: ["product"], url: 'https://www.qbitai.com/2026/07/441237.html'
+    },
+    {
+      id: 93826,
+      zh: { title: 'Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了', desc: '' },
+      ja: { title: 'Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了', desc: '' },
+      en: { title: 'Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了', desc: '' },
+      source: '量子位', time: '09:39', heat: 80,
+      tags: ["paper", "open-source"], url: 'https://www.qbitai.com/2026/07/441225.html'
+    },
+    {
+      id: 70307,
+      zh: { title: '卡帕西李飞飞辛顿都投了的Transformer专用芯片，签下10亿美元大单', desc: '' },
+      ja: { title: '卡帕西李飞飞辛顿都投了的Transformer专用芯片，签下10亿美元大单', desc: '' },
+      en: { title: '卡帕西李飞飞辛顿都投了的Transformer专用芯片，签下10亿美元大单', desc: '' },
+      source: '量子位', time: '09:39', heat: 84,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/07/441183.html'
+    },
+    {
+      id: 22258,
+      zh: { title: '大湾区首个200亿具身大脑来了！自变量两个月连融四轮，完成交割', desc: '' },
+      ja: { title: '大湾区首个200亿具身大脑来了！自变量两个月连融四轮，完成交割', desc: '' },
+      en: { title: '大湾区首个200亿具身大脑来了！自变量两个月连融四轮，完成交割', desc: '' },
+      source: '量子位', time: '09:39', heat: 83,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/07/441140.html'
+    },
+    {
+      id: 23436,
+      zh: { title: '卖Token也不是稳赚不赔！硅基流动招股书来了', desc: '' },
+      ja: { title: '卖Token也不是稳赚不赔！硅基流动招股书来了', desc: '' },
+      en: { title: '卖Token也不是稳赚不赔！硅基流动招股书来了', desc: '' },
+      source: '量子位', time: '09:39', heat: 66,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/07/441127.html'
+    },
+    {
+      id: 18009,
+      zh: { title: 'Om AI联汇发布VLX：全球首个面向物理世界的端侧流式多模态模型', desc: '' },
+      ja: { title: 'Om AI联汇发布VLX：全球首个面向物理世界的端侧流式多模态模型', desc: '' },
+      en: { title: 'Om AI联汇发布VLX：全球首个面向物理世界的端侧流式多模态模型', desc: '' },
+      source: '量子位', time: '09:39', heat: 75,
+      tags: ["model", "multimodal"], url: 'https://www.qbitai.com/2026/07/441124.html'
+    },
+    {
+      id: 77356,
+      zh: { title: 'Godot will no longer accept AI-authored code contributions', desc: '' },
+      ja: { title: 'Godot will no longer accept AI-authored code contributions', desc: '' },
+      en: { title: 'Godot will no longer accept AI-authored code contributions', desc: '' },
+      source: 'HN (pjmlp)', time: '07:43', heat: 95,
+      tags: ["coding"], url: 'https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/'
+    },
+    {
+      id: 14274,
+      zh: { title: 'Anthropic says US lifts export ban on Fable 5', desc: '' },
+      ja: { title: 'Anthropic says US lifts export ban on Fable 5', desc: '' },
+      en: { title: 'Anthropic says US lifts export ban on Fable 5', desc: '' },
+      source: 'HN (tobr)', time: '04:47', heat: 53,
+      tags: ["model"], url: 'https://www.bbc.com/news/articles/cdr42623e1do'
+    },
+    {
+      id: 47349,
+      zh: { title: 'Claude Fable 5 avAIlable globally tomorrow', desc: '' },
+      ja: { title: 'Claude Fable 5 avAIlable globally tomorrow', desc: '' },
+      en: { title: 'Claude Fable 5 available globally tomorrow', desc: '' },
+      source: 'HN (jitl)', time: '04:25', heat: 68,
+      tags: ["model"], url: 'https://twitter.com/anthropicai/status/2072163884430229756'
+    },
+    {
+      id: 69871,
+      zh: { title: 'How employment changes when firms adopt 生成式 AI', desc: '' },
+      ja: { title: 'How employment changes when firms adopt 生成的 AI', desc: '' },
+      en: { title: 'How employment changes when firms adopt generative AI', desc: '' },
+      source: 'HN (nreece)', time: '04:14', heat: 72,
+      tags: ["model"], url: 'https://ramp.com/data/ai-jobs-impact'
+    },
+    {
+      id: 47982,
+      zh: { title: 'America can switch off AI. Europe must switch gears before it\'s too late', desc: '' },
+      ja: { title: 'America can switch off AI. Europe must switch gears before it\'s too late', desc: '' },
+      en: { title: 'America can switch off AI. Europe must switch gears before it\'s too late', desc: '' },
+      source: 'HN (TMWNN)', time: '03:34', heat: 69,
+      tags: ["model"], url: 'https://www.euronews.com/my-europe/2026/06/30/america-can-switch-off-the-worlds-ai-europe-must-switch-gears-before-its-too-late'
+    },
+    {
+      id: 40555,
       zh: { title: 'BrAInJanus: A Unified Model for Understanding and Generation across BrAIn, Vision, and Language', desc: '' },
       ja: { title: 'BrAInJanus: A Unified Model for Understanding and Generation across BrAIn, Vision, and Language', desc: '' },
       en: { title: 'BrainJanus: A Unified Model for Understanding and Generation across Brain, Vision, and Language', desc: '' },
       source: 'Hugging Face', time: '03:27', heat: 82,
-      tags: ["model", "multimodal"], url: 'https://huggingface.co/papers/2606.30319'
-    },
-    {
-      id: 50133,
-      zh: { title: 'BlockPilot: Instance-Adaptive Policy Learning for 扩散-based Speculative De编程', desc: '' },
-      ja: { title: 'BlockPilot: Instance-Adaptive Policy Learning for 拡散-based Speculative Deコーディング', desc: '' },
-      en: { title: 'BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 66,
-      tags: ["coding", "policy"], url: 'https://huggingface.co/papers/2606.31315'
-    },
-    {
-      id: 95885,
-      zh: { title: 'Xiaomi-GUI-0 Technical Report', desc: '' },
-      ja: { title: 'Xiaomi-GUI-0 Technical Report', desc: '' },
-      en: { title: 'Xiaomi-GUI-0 Technical Report', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 85,
-      tags: ["model"], url: 'https://huggingface.co/papers/2606.31410'
-    },
-    {
-      id: 12690,
-      zh: { title: 'PolyFlow: Continuous Topology 嵌入 Flow Matching for Artist-style Mesh Generation', desc: '' },
-      ja: { title: 'PolyFlow: Continuous Topology 埋め込み Flow Matching for Artist-style Mesh Generation', desc: '' },
-      en: { title: 'PolyFlow: Continuous Topology Embedding Flow Matching for Artist-style Mesh Generation', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 70,
-      tags: ["model"], url: 'https://huggingface.co/papers/2606.30673'
-    },
-    {
-      id: 57890,
-      zh: { title: 'MemLearner: Learning to Query Context memory for Video World Models', desc: '' },
-      ja: { title: 'MemLearner: Learning to Query Context memory for Video World Models', desc: '' },
-      en: { title: 'MemLearner: Learning to Query Context memory for Video World Models', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 78,
-      tags: ["model", "multimodal", "video"], url: 'https://huggingface.co/papers/2606.31734'
-    },
-    {
-      id: 25067,
-      zh: { title: 'Orca: The World is in Your Mind', desc: '' },
-      ja: { title: 'Orca: The World is in Your Mind', desc: '' },
-      en: { title: 'Orca: The World is in Your Mind', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 79,
-      tags: ["model"], url: 'https://huggingface.co/papers/2606.30534'
-    },
-    {
-      id: 45224,
-      zh: { title: 'AVTok: 1D Unified Tokenization for Holistic Audio-Video Generation', desc: '' },
-      ja: { title: 'AVTok: 1D Unified トークンization for Holistic Audio-Video Generation', desc: '' },
-      en: { title: 'AVTok: 1D Unified Tokenization for Holistic Audio-Video Generation', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 84,
-      tags: ["multimodal", "video", "speech"], url: 'https://huggingface.co/papers/2606.30811'
-    },
-    {
-      id: 94628,
-      zh: { title: 'Evolution 微调: Learning to Discover Across 371 Optimization Tasks', desc: '' },
-      ja: { title: 'Evolution ファインチューニング: Learning to Discover Across 371 Optimization Tasks', desc: '' },
-      en: { title: 'Evolution Fine-Tuning: Learning to Discover Across 371 Optimization Tasks', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 66,
-      tags: ["model"], url: 'https://huggingface.co/papers/2606.29082'
-    },
-    {
-      id: 78498,
-      zh: { title: 'DOPD: Dual On-policy Distillation', desc: '' },
-      ja: { title: 'DOPD: Dual On-policy Distillation', desc: '' },
-      en: { title: 'DOPD: Dual On-policy Distillation', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 85,
-      tags: ["policy"], url: 'https://huggingface.co/papers/2606.30626'
-    },
-    {
-      id: 11120,
-      zh: { title: 'Dockerless: Environment-Free Program Verifier for 编程 智能体s', desc: '' },
-      ja: { title: 'Dockerless: Environment-Free Program Verifier for コーディング エージェントs', desc: '' },
-      en: { title: 'Dockerless: Environment-Free Program Verifier for Coding Agents', desc: '' },
-      source: 'Hugging Face', time: '03:27', heat: 71,
-      tags: ["agent", "coding"], url: 'https://huggingface.co/papers/2606.28436'
-    },
-    {
-      id: 42265,
-      zh: { title: 'A社你解释下，啥叫Sonnet 5比Fable 5还贵？', desc: '' },
-      ja: { title: 'A社你解释下，啥叫Sonnet 5比Fable 5还贵？', desc: '' },
-      en: { title: 'A社你解释下，啥叫Sonnet 5比Fable 5还贵？', desc: '' },
-      source: '量子位', time: '03:27', heat: 63,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/07/441001.html'
-    },
-    {
-      id: 12139,
-      zh: { title: '视频版Nano Banana来了！内置Gemini世界知识；原版香蕉出图仅需4秒', desc: '' },
-      ja: { title: '视频版Nano Banana来了！内置Gemini世界知识；原版香蕉出图仅需4秒', desc: '' },
-      en: { title: '视频版Nano Banana来了！内置Gemini世界知识；原版香蕉出图仅需4秒', desc: '' },
-      source: '量子位', time: '03:27', heat: 60,
-      tags: ["model", "multimodal"], url: 'https://www.qbitai.com/2026/07/440985.html'
-    },
-    {
-      id: 14811,
-      zh: { title: '百亿估值只是起点，跨维智能的物理AGI之路', desc: '' },
-      ja: { title: '百亿估值只是起点，跨维智能的物理AGI之路', desc: '' },
-      en: { title: '百亿估值只是起点，跨维智能的物理AGI之路', desc: '' },
-      source: '量子位', time: '03:27', heat: 81,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/06/440949.html'
-    },
-    {
-      id: 45254,
-      zh: { title: '港股新贵押注物理AI，乐动机器人打造万亿市场空间的核心基础设施', desc: '' },
-      ja: { title: '港股新贵押注物理AI，乐动机器人打造万亿市场空间的核心基础设施', desc: '' },
-      en: { title: '港股新贵押注物理AI，乐动机器人打造万亿市场空间的核心基础设施', desc: '' },
-      source: '量子位', time: '03:27', heat: 85,
-      tags: ["industry", "robotics"], url: 'https://www.qbitai.com/2026/06/440818.html'
-    },
-    {
-      id: 78814,
-      zh: { title: '顶刊生物实验难复现？统一操作话术来了！编译通过率98.6%', desc: '' },
-      ja: { title: '顶刊生物实验难复现？统一操作话术来了！编译通过率98.6%', desc: '' },
-      en: { title: '顶刊生物实验难复现？统一操作话术来了！编译通过率98.6%', desc: '' },
-      source: '量子位', time: '03:27', heat: 69,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/06/440630.html'
-    },
-    {
-      id: 66443,
-      zh: { title: 'Claude Code之父版「职场MBTI」：AI洗牌后只剩5类人，你选哪种？', desc: '' },
-      ja: { title: 'Claude Code之父版「职场MBTI」：AI洗牌后只剩5类人，你选哪种？', desc: '' },
-      en: { title: 'Claude Code之父版「职场MBTI」：AI洗牌后只剩5类人，你选哪种？', desc: '' },
-      source: '量子位', time: '03:27', heat: 83,
-      tags: ["model", "coding"], url: 'https://www.qbitai.com/2026/06/440599.html'
-    },
-    {
-      id: 29225,
-      zh: { title: 'GLM-5.3你来定！智谱唐杰全球征集意见，评论区清一色：视觉', desc: '' },
-      ja: { title: 'GLM-5.3你来定！智谱唐杰全球征集意见，评论区清一色：视觉', desc: '' },
-      en: { title: 'GLM-5.3你来定！智谱唐杰全球征集意见，评论区清一色：视觉', desc: '' },
-      source: '量子位', time: '03:27', heat: 71,
-      tags: ["multimodal"], url: 'https://www.qbitai.com/2026/06/440478.html'
-    },
-    {
-      id: 55193,
-      zh: { title: '中国信通院发布AI Infra运维领域首个评测基准', desc: '' },
-      ja: { title: '中国信通院发布AI Infra运维领域首个评测基准', desc: '' },
-      en: { title: '中国信通院发布AI Infra运维领域首个评测基准', desc: '' },
-      source: '量子位', time: '03:27', heat: 80,
-      tags: ["model", "paper"], url: 'https://www.qbitai.com/2026/06/440454.html'
+      tags: ["model"], url: '#'
     },
   ]},
   { day: '2026-06-30', items: [
     {
-      id: 71947,
+      id: 33646,
+      zh: { title: 'Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5', desc: '' },
+      ja: { title: 'Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5', desc: '' },
+      en: { title: 'Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5', desc: '' },
+      source: 'HN (Pragmata)', time: '23:55', heat: 95,
+      tags: ["model"], url: '#'
+    },
+    {
+      id: 20506,
       zh: { title: 'Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5', desc: '' },
       ja: { title: 'Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5', desc: '' },
       en: { title: 'Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5', desc: '' },
@@ -157,15 +293,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://twitter.com/AnthropicAI/status/2072106151890809341'
     },
     {
-      id: 39062,
-      zh: { title: 'Anthropic Mythos & Fable 5 export restrictions lifted', desc: '' },
-      ja: { title: 'Anthropic Mythos & Fable 5 export restrictions lifted', desc: '' },
-      en: { title: 'Anthropic Mythos & Fable 5 export restrictions lifted', desc: '' },
-      source: 'HN (bhouston)', time: '23:53', heat: 58,
-      tags: ["model"], url: 'https://www.reddit.com/r/ClaudeAI/s/GOQWdGc7Pu'
-    },
-    {
-      id: 30357,
+      id: 69043,
       zh: { title: 'From brAIn waves to words: a new path to communication without surgery', desc: '' },
       ja: { title: 'From brAIn waves to words: a new path to communication without surgery', desc: '' },
       en: { title: 'From brain waves to words: a new path to communication without surgery', desc: '' },
@@ -173,15 +301,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1'
     },
     {
-      id: 11082,
-      zh: { title: '分享： Morph Reflexes – Multi-head classifiers for 智能体 traces', desc: '' },
-      ja: { title: 'シェア： Morph Reflexes – Multi-head classifiers for エージェント traces', desc: '' },
-      en: { title: 'Show HN: Morph Reflexes – Multi-head classifiers for agent traces', desc: '' },
-      source: 'HN (bhaktatejas922)', time: '20:52', heat: 52,
-      tags: ["agent"], url: 'https://news.ycombinator.com/item?id=48739038'
-    },
-    {
-      id: 85984,
+      id: 38238,
       zh: { title: 'Claude Sonnet 5', desc: '' },
       ja: { title: 'Claude Sonnet 5', desc: '' },
       en: { title: 'Claude Sonnet 5', desc: '' },
@@ -189,7 +309,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://www.anthropic.com/news/claude-sonnet-5'
     },
     {
-      id: 75721,
+      id: 68170,
       zh: { title: 'Claude Science', desc: '' },
       ja: { title: 'Claude Science', desc: '' },
       en: { title: 'Claude Science', desc: '' },
@@ -197,7 +317,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://claude.com/product/claude-science'
     },
     {
-      id: 81347,
+      id: 81331,
       zh: { title: 'Claude Code is steganographically marking requests', desc: '' },
       ja: { title: 'Claude Code is steganographically marking requests', desc: '' },
       en: { title: 'Claude Code is steganographically marking requests', desc: '' },
@@ -207,7 +327,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-29', items: [
     {
-      id: 53176,
+      id: 81261,
       zh: { title: 'GrapheneOS cites HyundAI, Kia as it pressures Volkswagen over app block', desc: '' },
       ja: { title: 'GrapheneOS cites HyundAI, Kia as it pressures Volkswagen over app block', desc: '' },
       en: { title: 'GrapheneOS cites Hyundai, Kia as it pressures Volkswagen over app block', desc: '' },
@@ -215,7 +335,15 @@ const NEWS_DATA = [
       tags: ["model"], url: '#'
     },
     {
-      id: 28181,
+      id: 96195,
+      zh: { title: 'Segmenting Robot Video into Actionable Subtasks', desc: '' },
+      ja: { title: 'Segmenting Robot Video into Actionable Subtasks', desc: '' },
+      en: { title: 'Segmenting Robot Video into Actionable Subtasks', desc: '' },
+      source: 'HN (tomaspduarte)', time: '19:52', heat: 57,
+      tags: ["multimodal", "robotics", "video"], url: 'https://macrodata.co/blog/annotating-robot-video-subtasks'
+    },
+    {
+      id: 39603,
       zh: { title: '.self: A new top-level domAIn designed to support self-hosting', desc: '' },
       ja: { title: '.self: A new top-level domAIn designed to support self-hosting', desc: '' },
       en: { title: '.self: A new top-level domain designed to support self-hosting', desc: '' },
@@ -225,25 +353,17 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-28', items: [
     {
-      id: 46530,
+      id: 24397,
       zh: { title: 'Better Images of AI', desc: '' },
       ja: { title: 'Better Images of AI', desc: '' },
       en: { title: 'Better Images of AI', desc: '' },
       source: 'HN (Curiositry)', time: '23:50', heat: 63,
       tags: ["model"], url: '#'
     },
-    {
-      id: 80293,
-      zh: { title: 'Computer-AIded Language Development in Nonspeaking Children (1968) [pdf]', desc: '' },
-      ja: { title: 'Computer-AIded Language Development in Nonspeaking Children (1968) [pdf]', desc: '' },
-      en: { title: 'Computer-Aided Language Development in Nonspeaking Children (1968) [pdf]', desc: '' },
-      source: 'HN (dang)', time: '18:59', heat: 67,
-      tags: ["model"], url: 'https://archive.org/details/colby1968-computer-aided-language-development-in-non-speaking-children'
-    },
   ]},
   { day: '2026-06-27', items: [
     {
-      id: 76597,
+      id: 11678,
       zh: { title: '苹果 Neural Engine: Architecture, Programming, and Performance', desc: '' },
       ja: { title: 'Apple Neural Engine: Architecture, Programming, and Performance', desc: '' },
       en: { title: 'Apple Neural Engine: Architecture, Programming, and Performance', desc: '' },
@@ -253,7 +373,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-26', items: [
     {
-      id: 59471,
+      id: 40144,
       zh: { title: 'US allows Anthropic to release Mythos to \', desc: '' },
       ja: { title: 'US allows Anthropic to release Mythos to \', desc: '' },
       en: { title: 'US allows Anthropic to release Mythos to \', desc: '' },
@@ -263,7 +383,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-25', items: [
     {
-      id: 42562,
+      id: 21736,
       zh: { title: 'Steve Jobs felt certAIn 苹果 would never have existed without making blue boxes', desc: '' },
       ja: { title: 'Steve Jobs felt certAIn Apple would never have existed without making blue boxes', desc: '' },
       en: { title: 'Steve Jobs felt certain Apple would never have existed without making blue boxes', desc: '' },
@@ -273,7 +393,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-24', items: [
     {
-      id: 68648,
+      id: 76034,
       zh: { title: 'Omnigent: 开源 Meta harness for 智能体s', desc: '' },
       ja: { title: 'Omnigent: オープンソース Meta harness for エージェントs', desc: '' },
       en: { title: 'Omnigent: Open-source meta harness for agents', desc: '' },
@@ -283,7 +403,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-23', items: [
     {
-      id: 35740,
+      id: 78021,
       zh: { title: 'Advanced Nintendo EntertAInment System (ANES) – NES Modded to Use 2 PPUs', desc: '' },
       ja: { title: 'Advanced Nintendo EntertAInment System (ANES) – NES Modded to Use 2 PPUs', desc: '' },
       en: { title: 'Advanced Nintendo Entertainment System (ANES) – NES Modded to Use 2 PPUs', desc: '' },
@@ -293,7 +413,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-22', items: [
     {
-      id: 62149,
+      id: 90216,
       zh: { title: 'The annotated PyTorch 训练 loop', desc: '' },
       ja: { title: 'The annotated PyTorch トレーニング loop', desc: '' },
       en: { title: 'The annotated PyTorch training loop', desc: '' },
@@ -303,7 +423,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-21', items: [
     {
-      id: 68462,
+      id: 34159,
       zh: { title: 'OpenAI 开放 GPTs 应用商店：开发者可发布 AI Agent 赚钱', desc: 'OpenAI GPT Store 正式向开发者开放，支持发布自定义 GPTs 和 智能体，通过使用量和订阅获得收入分成。' },
       ja: { title: 'OpenAIがGPTsアプリストアを開放：開発者はAI Agentを公開して収益化可能', desc: 'OpenAI GPT Store 正式向开发者开放，支持发布自定义 GPTs 和 智能体，通过使用量和订阅获得收入分成。' },
       en: { title: 'OpenAI Opens GPT App Store: Developers Can Monetize AI Agents', desc: 'OpenAI GPT Store 正式向开发者开放，支持发布自定义 GPTs 和 智能体，通过使用量和订阅获得收入分成。' },
@@ -313,7 +433,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-20', items: [
     {
-      id: 93293,
+      id: 36476,
       zh: { title: '分享： Persona.js – a vanilla-JS 智能体 UI library with native WebMCP (MIT)', desc: '' },
       ja: { title: 'シェア： Persona.js – a vanilla-JS エージェント UI library with native WebMCP (MIT)', desc: '' },
       en: { title: 'Show HN: Persona.js – a vanilla-JS agent UI library with native WebMCP (MIT)', desc: '' },
@@ -323,7 +443,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-06-19', items: [
     {
-      id: 94753,
+      id: 59736,
       zh: { title: '分享： BrAIn Frog – Can you be random enough for 11 lines of JavaScript?', desc: '' },
       ja: { title: 'シェア： BrAIn Frog – Can you be random enough for 11 lines of JavaScript?', desc: '' },
       en: { title: 'Show HN: Brain Frog – Can you be random enough for 11 lines of JavaScript?', desc: '' },
