@@ -1,249 +1,337 @@
 // Slime AI — Auto-generated news data
-// Generated: 2026-09-02T15:53:15.246322+00:00
+// Generated: 2026-09-02T20:27:13.856876+00:00
 const NEWS_DATA = [
   { day: '2026-09-02', items: [
     {
-      id: 14180,
+      id: 55126,
       zh: { title: '[arXiv] Efficient SWE 智能体 基准ing via Trajectory-Aware Evaluation', desc: 'Evaluating software engineering 智能体s on realistic 基准s is costly, since each task may require multi-step code ex' },
       ja: { title: '[arXiv] Efficient SWE エージェント ベンチマークing via Trajectory-Aware Evaluation', desc: 'Evaluating software engineering エージェントs on realistic ベンチマークs is costly, since each task may require multi-step code ex' },
       en: { title: '[arXiv] Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation', desc: 'Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code ex' },
-      source: 'arXiv', time: '15:53', heat: 86,
+      source: 'arXiv', time: '20:27', heat: 74,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01603v1'
     },
     {
-      id: 57505,
+      id: 86195,
       zh: { title: '[arXiv] Adaptive Critical Token-Aware 检索 for Repository-Level 代码生成', desc: 'The repository-level 代码生成 task requires synthesizing code that satisfies task requirements while remAIning co' },
       ja: { title: '[arXiv] Adaptive Critical トークン-Aware 検索 for Repository-Level コード生成', desc: 'The repository-level コード生成 task requires synthesizing code that satisfies task requirements while remAIning co' },
       en: { title: '[arXiv] Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation', desc: 'The repository-level code generation task requires synthesizing code that satisfies task requirements while remaining co' },
-      source: 'arXiv', time: '15:53', heat: 73,
+      source: 'arXiv', time: '20:27', heat: 71,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01601v1'
     },
     {
-      id: 93005,
+      id: 78645,
       zh: { title: '[arXiv] CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic 智能体 Harnesses?', desc: 'Dynamic 智能体 harnesses let language models change the software that shapes their own execution. This flexibility brings' },
       ja: { title: '[arXiv] CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic エージェント Harnesses?', desc: 'Dynamic エージェント harnesses let language models change the software that shapes their own execution. This flexibility brings' },
       en: { title: '[arXiv] CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?', desc: 'Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings' },
-      source: 'arXiv', time: '15:53', heat: 86,
+      source: 'arXiv', time: '20:27', heat: 66,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01600v1'
     },
     {
-      id: 14577,
+      id: 24860,
       zh: { title: '[arXiv] The Rise of Verbal 强化学习', desc: 'Natural language is emerging as a primary feedback channel for improving language 智能体s, capable of conveying intent, p' },
       ja: { title: '[arXiv] The Rise of Verbal 強化学習', desc: 'Natural language is emerging as a primary feedback channel for improving language エージェントs, capable of conveying intent, p' },
       en: { title: '[arXiv] The Rise of Verbal Reinforcement Learning', desc: 'Natural language is emerging as a primary feedback channel for improving language agents, capable of conveying intent, p' },
-      source: 'arXiv', time: '15:53', heat: 74,
+      source: 'arXiv', time: '20:27', heat: 78,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01597v1'
     },
     {
-      id: 20310,
+      id: 65256,
       zh: { title: '[arXiv] Designing Proactive Thought Partners for Writing', desc: 'Writing involves diverse cognitive activities, from ideation to revision, and writers\' needs vary across individuals and' },
       ja: { title: '[arXiv] Designing Proactive Thought Partners for Writing', desc: 'Writing involves diverse cognitive activities, from ideation to revision, and writers\' needs vary across individuals and' },
       en: { title: '[arXiv] Designing Proactive Thought Partners for Writing', desc: 'Writing involves diverse cognitive activities, from ideation to revision, and writers\' needs vary across individuals and' },
-      source: 'arXiv', time: '15:53', heat: 71,
+      source: 'arXiv', time: '20:27', heat: 82,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01588v1'
     },
     {
-      id: 97557,
+      id: 62439,
       zh: { title: '[arXiv] Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large 大语言模型s', desc: 'How to divide a fixed annotation budget between supervised 微调 (SFT) and 强化学习 (RL) during 大语言模型 ' },
       ja: { title: '[arXiv] Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large 大規模言語モデルs', desc: 'How to divide a fixed annotation budget between supervised ファインチューニング (SFT) and 強化学習 (RL) during 大規模言語モデル ' },
       en: { title: '[arXiv] Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs', desc: 'How to divide a fixed annotation budget between supervised fine-tuning (SFT) and reinforcement learning (RL) during LLM ' },
-      source: 'arXiv', time: '15:53', heat: 71,
+      source: 'arXiv', time: '20:27', heat: 75,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01573v1'
     },
     {
-      id: 99648,
+      id: 44605,
       zh: { title: '[arXiv] Selective 智能体 Guidance via Entropy: Learning 自主 Policies from Imperfect VLM Teachers', desc: 'Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies' },
       ja: { title: '[arXiv] Selective エージェント Guidance via Entropy: Learning 自律 Policies from Imperfect VLM Teachers', desc: 'Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies' },
       en: { title: '[arXiv] Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers', desc: 'Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies' },
-      source: 'arXiv', time: '15:53', heat: 71,
+      source: 'arXiv', time: '20:27', heat: 80,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01567v1'
     },
     {
-      id: 52037,
+      id: 55671,
       zh: { title: '[arXiv] From Confusion to Clarity: Confusion-Aware 检索 and Knowledge Injection for Text Classification', desc: '大语言模型s (大语言模型s) struggle to classify text into taxonomies with many semantically similar labels, as the dis' },
       ja: { title: '[arXiv] From Confusion to Clarity: Confusion-Aware 検索 and Knowledge Injection for Text Classification', desc: '大規模言語モデルs (大規模言語モデルs) struggle to classify text into taxonomies with many semantically similar labels, as the dis' },
       en: { title: '[arXiv] From Confusion to Clarity: Confusion-Aware Retrieval and Knowledge Injection for Text Classification', desc: 'Large language models (LLMs) struggle to classify text into taxonomies with many semantically similar labels, as the dis' },
-      source: 'arXiv', time: '15:53', heat: 84,
+      source: 'arXiv', time: '20:27', heat: 83,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01564v1'
     },
     {
-      id: 18458,
+      id: 75509,
       zh: { title: '[arXiv] GlossoGen: Emergent Language in Complex Multi-智能体 大语言模型 Interactions', desc: 'The growing rate at which 大语言模型 智能体s interact with one another rAIses key questions about language evolution in multi-LL' },
       ja: { title: '[arXiv] GlossoGen: Emergent Language in Complex Multi-エージェント 大規模言語モデル Interactions', desc: 'The growing rate at which 大規模言語モデル エージェントs interact with one another rAIses key questions about language evolution in multi-LL' },
       en: { title: '[arXiv] GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions', desc: 'The growing rate at which LLM agents interact with one another raises key questions about language evolution in multi-LL' },
-      source: 'arXiv', time: '15:53', heat: 77,
+      source: 'arXiv', time: '20:27', heat: 74,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01491v1'
     },
     {
-      id: 34337,
+      id: 50029,
       zh: { title: '[arXiv] EdiTikZ: Scientific Figure Editing from Revision Trajectories', desc: 'Vision-language models (VLMs) have shown strong performance in generating scientific figures from text or images. Howeve' },
       ja: { title: '[arXiv] EdiTikZ: Scientific Figure Editing from Revision Trajectories', desc: 'Vision-language models (VLMs) have shown strong performance in generating scientific figures from text or images. Howeve' },
       en: { title: '[arXiv] EdiTikZ: Scientific Figure Editing from Revision Trajectories', desc: 'Vision-language models (VLMs) have shown strong performance in generating scientific figures from text or images. Howeve' },
-      source: 'arXiv', time: '15:53', heat: 70,
+      source: 'arXiv', time: '20:27', heat: 76,
       tags: ["model", "product"], url: 'http://arxiv.org/abs/2609.01409v1'
     },
     {
-      id: 14550,
+      id: 74402,
+      zh: { title: '智能体JudgeBench: A Multi-Difficulty 基准 for Evaluating 大语言模型 Judges on 智能体ic Tool-Calling', desc: '' },
+      ja: { title: 'エージェントJudgeBench: A Multi-Difficulty ベンチマーク for Evaluating 大規模言語モデル Judges on エージェントic Tool-Calling', desc: '' },
+      en: { title: 'AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling', desc: '' },
+      source: 'Hugging Face', time: '20:27', heat: 85,
+      tags: ["model", "product", "paper", "agent"], url: 'https://huggingface.co/papers/2608.26623'
+    },
+    {
+      id: 89102,
+      zh: { title: 'Token-Efficient Data 推理 智能体s via Adaptive Structuring of Unstructured Data', desc: '' },
+      ja: { title: 'トークン-Efficient Data 推論 エージェントs via Adaptive Structuring of Unstructured Data', desc: '' },
+      en: { title: 'Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data', desc: '' },
+      source: 'Hugging Face', time: '20:27', heat: 88,
+      tags: ["agent"], url: 'https://huggingface.co/papers/2608.31082'
+    },
+    {
+      id: 61875,
+      zh: { title: 'Adapting Without Gradients: Affine Statistics Transport and What Its Certificate Can Tell You', desc: '' },
+      ja: { title: 'Adapting Without Gradients: Affine Statistics Transport and What Its Certificate Can Tell You', desc: '' },
+      en: { title: 'Adapting Without Gradients: Affine Statistics Transport and What Its Certificate Can Tell You', desc: '' },
+      source: 'Hugging Face', time: '20:27', heat: 81,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.00374'
+    },
+    {
+      id: 71047,
+      zh: { title: 'DramaChAIn Bench: An End-to-End 基准 for Short-Drama Generation', desc: '' },
+      ja: { title: 'DramaChAIn Bench: An End-to-End ベンチマーク for Short-Drama Generation', desc: '' },
+      en: { title: 'DramaChain Bench: An End-to-End Benchmark for Short-Drama Generation', desc: '' },
+      source: 'Hugging Face', time: '20:27', heat: 77,
+      tags: ["paper"], url: 'https://huggingface.co/papers/2609.00646'
+    },
+    {
+      id: 60482,
       zh: { title: 'Learning Where Outcomes Change:Credit-Addressable 推理 for 多模态 Geometry', desc: '' },
       ja: { title: 'Learning Where Outcomes Change:Credit-Addressable 推論 for マルチモーダル Geometry', desc: '' },
       en: { title: 'Learning Where Outcomes Change:Credit-Addressable Reasoning for Multimodal Geometry', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 81,
+      source: 'Hugging Face', time: '20:27', heat: 82,
       tags: ["multimodal"], url: 'https://huggingface.co/papers/2608.30457'
     },
     {
-      id: 60751,
+      id: 85655,
       zh: { title: 'From Production Traffic to Post-训练: Building a Self-Hosted 大语言模型 That Covers the Corporate Request Mix', desc: '' },
       ja: { title: 'From Production Traffic to Post-トレーニング: Building a Self-Hosted 大規模言語モデル That Covers the Corporate Request Mix', desc: '' },
       en: { title: 'From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 87,
+      source: 'Hugging Face', time: '20:27', heat: 86,
       tags: ["model", "product", "deployment"], url: 'https://huggingface.co/papers/2609.01572'
     },
     {
-      id: 53942,
+      id: 27822,
       zh: { title: 'Recursive Criticality of AI Self-Improvement', desc: '' },
       ja: { title: 'Recursive Criticality of AI Self-Improvement', desc: '' },
       en: { title: 'Recursive Criticality of AI Self-Improvement', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 83,
+      source: 'Hugging Face', time: '20:27', heat: 77,
       tags: ["model"], url: 'https://huggingface.co/papers/2609.00137'
     },
     {
-      id: 16566,
+      id: 25819,
       zh: { title: '智能体s in the Large: Perception-Centered Architecture for Persistent 智能体s', desc: '' },
       ja: { title: 'エージェントs in the Large: Perception-Centered Architecture for Persistent エージェントs', desc: '' },
       en: { title: 'Agents in the Large: Perception-Centered Architecture for Persistent Agents', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 83,
+      source: 'Hugging Face', time: '20:27', heat: 85,
       tags: ["agent"], url: 'https://huggingface.co/papers/2608.30478'
     },
     {
-      id: 29049,
+      id: 90983,
       zh: { title: 'DiagEvo: Diagnosis-Guided Self-Evolution via Hierarchical Error Memory', desc: '' },
       ja: { title: 'DiagEvo: Diagnosis-Guided Self-Evolution via Hierarchical Error Memory', desc: '' },
       en: { title: 'DiagEvo: Diagnosis-Guided Self-Evolution via Hierarchical Error Memory', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 87,
+      source: 'Hugging Face', time: '20:27', heat: 69,
       tags: ["tutorial"], url: 'https://huggingface.co/papers/2609.00768'
     },
     {
-      id: 56834,
+      id: 74014,
       zh: { title: 'Safin-1: 安全 from Within through Memory-Native State Evolution', desc: '' },
       ja: { title: 'Safin-1: 安全性 from Within through Memory-Native State Evolution', desc: '' },
       en: { title: 'Safin-1: Safety from Within through Memory-Native State Evolution', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 88,
+      source: 'Hugging Face', time: '20:27', heat: 69,
       tags: ["safety"], url: 'https://huggingface.co/papers/2609.00092'
     },
     {
-      id: 92734,
-      zh: { title: 'SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers', desc: '' },
-      ja: { title: 'SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers', desc: '' },
-      en: { title: 'SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 75,
-      tags: ["policy"], url: 'https://huggingface.co/papers/2609.01343'
-    },
-    {
-      id: 79351,
-      zh: { title: 'Harness-of-Harness: Multi-Day 自主 Software Development with Continual Improvement', desc: '' },
-      ja: { title: 'Harness-of-Harness: Multi-Day 自律 Software Development with Continual Improvement', desc: '' },
-      en: { title: 'Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 73,
-      tags: ["agent"], url: 'https://huggingface.co/papers/2609.01481'
-    },
-    {
-      id: 92465,
-      zh: { title: 'UI-Venus-2 Technical Report', desc: '' },
-      ja: { title: 'UI-Venus-2 Technical Report', desc: '' },
-      en: { title: 'UI-Venus-2 Technical Report', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 73,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.00028'
-    },
-    {
-      id: 20598,
-      zh: { title: 'Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for 自主 Driving', desc: '' },
-      ja: { title: 'Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for 自律 Driving', desc: '' },
-      en: { title: 'Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving', desc: '' },
-      source: 'Hugging Face', time: '15:53', heat: 74,
-      tags: ["model", "agent", "multimodal", "robotics"], url: 'https://huggingface.co/papers/2609.00111'
-    },
-    {
-      id: 58093,
+      id: 43113,
       zh: { title: 'SkyProduction天工工作台：从剧本到成片，一套工作台把精品短剧创作真正跑起来', desc: '' },
       ja: { title: 'SkyProduction天工工作台：从剧本到成片，一套工作台把精品短剧创作真正跑起来', desc: '' },
       en: { title: 'SkyProduction天工工作台：从剧本到成片，一套工作台把精品短剧创作真正跑起来', desc: '' },
-      source: '量子位', time: '15:53', heat: 79,
+      source: '量子位', time: '20:27', heat: 71,
       tags: ["product"], url: 'https://www.qbitai.com/2026/09/483274.html'
     },
     {
-      id: 73385,
+      id: 52352,
       zh: { title: '还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍', desc: '' },
       ja: { title: '还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍', desc: '' },
       en: { title: '还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍', desc: '' },
-      source: '量子位', time: '15:53', heat: 69,
+      source: '量子位', time: '20:27', heat: 72,
       tags: ["paper"], url: 'https://www.qbitai.com/2026/09/483104.html'
     },
     {
-      id: 12107,
+      id: 77345,
       zh: { title: '阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一', desc: '' },
       ja: { title: '阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一', desc: '' },
       en: { title: '阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一', desc: '' },
-      source: '量子位', time: '15:53', heat: 68,
+      source: '量子位', time: '20:27', heat: 63,
       tags: ["coding"], url: 'https://www.qbitai.com/2026/09/483101.html'
     },
     {
-      id: 60757,
+      id: 64001,
       zh: { title: '前字节强化学习专家孙鹏博士加盟星尘智能，完善Physical AI全栈技术布局', desc: '' },
       ja: { title: '前字节强化学习专家孙鹏博士加盟星尘智能，完善Physical AI全栈技术布局', desc: '' },
       en: { title: '前字节强化学习专家孙鹏博士加盟星尘智能，完善Physical AI全栈技术布局', desc: '' },
-      source: '量子位', time: '15:53', heat: 61,
+      source: '量子位', time: '20:27', heat: 71,
       tags: ["model"], url: 'https://www.qbitai.com/2026/09/483097.html'
     },
     {
-      id: 46494,
+      id: 22186,
       zh: { title: '企业级Agent落地样板间！百融硅基员工批量上岗，按结果领工资', desc: '' },
       ja: { title: '企业级Agent落地样板间！百融硅基员工批量上岗，按结果领工资', desc: '' },
       en: { title: '企业级Agent落地样板间！百融硅基员工批量上岗，按结果领工资', desc: '' },
-      source: '量子位', time: '15:53', heat: 62,
+      source: '量子位', time: '20:27', heat: 76,
       tags: ["agent"], url: 'https://www.qbitai.com/2026/09/482967.html'
     },
     {
-      id: 77980,
+      id: 37884,
       zh: { title: 'Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线', desc: '' },
       ja: { title: 'Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线', desc: '' },
       en: { title: 'Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线', desc: '' },
-      source: '量子位', time: '15:53', heat: 63,
+      source: '量子位', time: '20:27', heat: 73,
       tags: ["model"], url: 'https://www.qbitai.com/2026/09/482652.html'
     },
     {
-      id: 97698,
+      id: 92051,
       zh: { title: '香港首个真实开放场景服务机器人落地兰桂坊', desc: '' },
       ja: { title: '香港首个真实开放场景服务机器人落地兰桂坊', desc: '' },
       en: { title: '香港首个真实开放场景服务机器人落地兰桂坊', desc: '' },
-      source: '量子位', time: '15:53', heat: 70,
+      source: '量子位', time: '20:27', heat: 77,
       tags: ["robotics"], url: 'https://www.qbitai.com/2026/09/482855.html'
     },
     {
-      id: 97243,
+      id: 49520,
       zh: { title: '巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS', desc: '' },
       ja: { title: '巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS', desc: '' },
       en: { title: '巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS', desc: '' },
-      source: '量子位', time: '15:53', heat: 80,
+      source: '量子位', time: '20:27', heat: 63,
       tags: ["model", "industry"], url: 'https://www.qbitai.com/2026/09/482699.html'
     },
     {
-      id: 45514,
-      zh: { title: 'Gemini 3.8 Flash', desc: '' },
-      ja: { title: 'Gemini 3.8 Flash', desc: '' },
-      en: { title: 'Gemini 3.8 Flash', desc: '' },
-      source: 'HN (bratao)', time: '15:12', heat: 95,
-      tags: ["model"], url: 'https://deepmind.google/models/model-cards/gemini-3-8-flash/'
+      id: 27749,
+      zh: { title: 'AI 智能体s and the Refactoring That Never Happens', desc: '' },
+      ja: { title: 'AI エージェントs and the Refactoring That Never Happens', desc: '' },
+      en: { title: 'AI Agents and the Refactoring That Never Happens', desc: '' },
+      source: 'HN (rosenfeld)', time: '19:51', heat: 53,
+      tags: ["product", "agent"], url: 'https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/'
     },
     {
-      id: 45017,
+      id: 51161,
+      zh: { title: 'The Post-AI Internet Doesn\'t Look Great', desc: '' },
+      ja: { title: 'The Post-AI Internet Doesn\'t Look Great', desc: '' },
+      en: { title: 'The Post-AI Internet Doesn\'t Look Great', desc: '' },
+      source: 'HN (speckx)', time: '19:41', heat: 73,
+      tags: ["model"], url: 'https://www.jordangoodman.xyz/the-post-ai-internet-doesnt-look-great/'
+    },
+    {
+      id: 81752,
+      zh: { title: 'Firefox\'s AI Switch Is Off. Telemetry Isn\'t', desc: '' },
+      ja: { title: 'Firefox\'s AI Switch Is Off. Telemetry Isn\'t', desc: '' },
+      en: { title: 'Firefox\'s AI Switch Is Off. Telemetry Isn\'t', desc: '' },
+      source: 'HN (speckx)', time: '18:30', heat: 63,
+      tags: ["model"], url: 'https://marius.blog/firefox-155-ai-kill-switch-retest/'
+    },
+    {
+      id: 48329,
+      zh: { title: 'No AI until high school:NYC schools announce major classroom technology overhaul', desc: '' },
+      ja: { title: 'No AI until high school:NYC schools announce major classroom technology overhaul', desc: '' },
+      en: { title: 'No AI until high school:NYC schools announce major classroom technology overhaul', desc: '' },
+      source: 'HN (thunderbong)', time: '18:13', heat: 58,
+      tags: ["model"], url: 'https://abc7ny.com/post/new-york-city-public-schools-banning-ai-use-middle-school-year/19778716/'
+    },
+    {
+      id: 51630,
+      zh: { title: 'This Fence Has No Farmer (Chesterton\'s Fence and AI-Generated Code)', desc: '' },
+      ja: { title: 'This Fence Has No Farmer (Chesterton\'s Fence and AI-Generated Code)', desc: '' },
+      en: { title: 'This Fence Has No Farmer (Chesterton\'s Fence and AI-Generated Code)', desc: '' },
+      source: 'HN (xadz)', time: '18:11', heat: 52,
+      tags: ["coding"], url: 'https://adamgreenough.net/blog/this-fence-has-no-farmer/'
+    },
+    {
+      id: 99757,
+      zh: { title: 'AI is stopping startups from completing puberty', desc: '' },
+      ja: { title: 'AI is stopping startups from completing puberty', desc: '' },
+      en: { title: 'AI is stopping startups from completing puberty', desc: '' },
+      source: 'HN (mooreds)', time: '18:06', heat: 54,
+      tags: ["model"], url: 'https://ashley.rolfmore.com/ai-is-stopping-startups-from-completing-puberty/'
+    },
+    {
+      id: 24974,
+      zh: { title: 'PAInt.net 5.2 alpha now runs on Linux', desc: '' },
+      ja: { title: 'PAInt.net 5.2 alpha now runs on Linux', desc: '' },
+      en: { title: 'Paint.net 5.2 alpha now runs on Linux', desc: '' },
+      source: 'HN (judah)', time: '17:18', heat: 95,
+      tags: ["model"], url: 'https://forums.paint.net/topic/134562-paintnet-52-alpha-build-9739/'
+    },
+    {
+      id: 33161,
+      zh: { title: 'How RAIlroad Crossings Work (2024)', desc: '' },
+      ja: { title: 'How RAIlroad Crossings Work (2024)', desc: '' },
+      en: { title: 'How Railroad Crossings Work (2024)', desc: '' },
+      source: 'HN (at1as)', time: '16:52', heat: 61,
+      tags: ["model"], url: 'https://practical.engineering/blog/2023/12/29/how-railroad-crossings-work'
+    },
+    {
+      id: 10347,
+      zh: { title: 'The race to engineer new knobs for the human brAIn', desc: '' },
+      ja: { title: 'The race to engineer new knobs for the human brAIn', desc: '' },
+      en: { title: 'The race to engineer new knobs for the human brain', desc: '' },
+      source: 'HN (pminimax)', time: '16:25', heat: 66,
+      tags: ["model"], url: 'https://www.neuroai.science/p/the-race-to-engineer-new-knobs-for'
+    },
+    {
+      id: 56109,
+      zh: { title: 'Saving money on 谷歌 Photos with Immich: Your own personal photo stoRAGe', desc: '' },
+      ja: { title: 'Saving money on Google Photos with Immich: Your own personal photo stoRAGe', desc: '' },
+      en: { title: 'Saving money on Google Photos with Immich: Your own personal photo storage', desc: '' },
+      source: 'HN (speckx)', time: '16:07', heat: 93,
+      tags: ["model"], url: 'https://www.markpitblado.me/blog/saving-on-google-photos-with-immich-your-own-personal-photo-storage/'
+    },
+    {
+      id: 28528,
+      zh: { title: '分享： Aura – a Rust 智能体 that investigates and fixes production incidents', desc: '' },
+      ja: { title: 'シェア： Aura – a Rust エージェント that investigates and fixes production incidents', desc: '' },
+      en: { title: 'Show HN: Aura – a Rust agent that investigates and fixes production incidents', desc: '' },
+      source: 'HN (jvogt)', time: '15:55', heat: 58,
+      tags: ["product", "agent"], url: 'https://github.com/mezmo/aura'
+    },
+    {
+      id: 49291,
+      zh: { title: 'Gemini 3.8 Flash and 3.8 Flash Cyber', desc: '' },
+      ja: { title: 'Gemini 3.8 Flash and 3.8 Flash Cyber', desc: '' },
+      en: { title: 'Gemini 3.8 Flash and 3.8 Flash Cyber', desc: '' },
+      source: 'HN (bratao)', time: '15:12', heat: 95,
+      tags: ["model"], url: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/'
+    },
+    {
+      id: 97859,
       zh: { title: 'Web大语言模型: high-performance in-browser 大语言模型 推理 engine', desc: '' },
       ja: { title: 'Web大規模言語モデル: high-performance in-browser 大規模言語モデル 推論 engine', desc: '' },
       en: { title: 'WebLLM: high-performance in-browser LLM inference engine', desc: '' },
-      source: 'HN (saikatsg)', time: '14:02', heat: 60,
+      source: 'HN (saikatsg)', time: '14:02', heat: 82,
       tags: ["model", "deployment"], url: 'https://github.com/mlc-ai/web-llm'
     },
     {
-      id: 85192,
+      id: 55400,
       zh: { title: 'Three sites made 215,128 “best software” pages for AI. Perplexity cites them', desc: '' },
       ja: { title: 'Three sites made 215,128 “best software” pages for AI. Perplexity cites them', desc: '' },
       en: { title: 'Three sites made 215,128 “best software” pages for AI. Perplexity cites them', desc: '' },
@@ -251,95 +339,47 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/'
     },
     {
-      id: 79207,
-      zh: { title: 'A third of Perplexity\'s citations don\'t contAIn the number they\'re cited for', desc: '' },
-      ja: { title: 'A third of Perplexity\'s citations don\'t contAIn the number they\'re cited for', desc: '' },
-      en: { title: 'A third of Perplexity\'s citations don\'t contain the number they\'re cited for', desc: '' },
-      source: 'HN (jakobgreenfeld)', time: '13:49', heat: 65,
-      tags: ["model"], url: 'https://hausresearch.com/reports/perplexity-citation-audit/'
-    },
-    {
-      id: 92390,
+      id: 29886,
       zh: { title: 'Six curl CVEs after OpenAI and Anthropic came back with zero', desc: '' },
       ja: { title: 'Six curl CVEs after OpenAI and Anthropic came back with zero', desc: '' },
       en: { title: 'Six curl CVEs after OpenAI and Anthropic came back with zero', desc: '' },
-      source: 'HN (goobreee)', time: '13:43', heat: 87,
+      source: 'HN (goobreee)', time: '13:43', heat: 95,
       tags: ["model"], url: 'https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero'
     },
     {
-      id: 27590,
+      id: 88852,
       zh: { title: '大语言模型s: Intelligence vs. Cost', desc: '' },
       ja: { title: '大規模言語モデルs: Intelligence vs. Cost', desc: '' },
       en: { title: 'LLMs: Intelligence vs. Cost', desc: '' },
-      source: 'HN (theanonymousone)', time: '13:03', heat: 67,
+      source: 'HN (theanonymousone)', time: '13:03', heat: 81,
       tags: ["model"], url: 'https://openteams.com/intelligence-vs-cost/'
     },
     {
-      id: 48049,
+      id: 47157,
       zh: { title: 'Aging BrAIns Blend Memories Together Instead of Just Forgetting Them', desc: '' },
       ja: { title: 'Aging BrAIns Blend Memories Together Instead of Just Forgetting Them', desc: '' },
       en: { title: 'Aging Brains Blend Memories Together Instead of Just Forgetting Them', desc: '' },
-      source: 'HN (mdp2021)', time: '12:59', heat: 80,
+      source: 'HN (mdp2021)', time: '12:59', heat: 95,
       tags: ["model"], url: 'https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds/'
     },
     {
-      id: 80114,
-      zh: { title: 'Why humanoid robots won\'t catch up to human workers any time soon', desc: '' },
-      ja: { title: 'Why humanoid robots won\'t catch up to human workers any time soon', desc: '' },
-      en: { title: 'Why humanoid robots won\'t catch up to human workers any time soon', desc: '' },
-      source: 'HN (speckx)', time: '12:53', heat: 62,
-      tags: ["robotics"], url: 'https://www.understandingai.org/p/why-humanoid-robots-wont-catch-up'
-    },
-    {
-      id: 15147,
-      zh: { title: 'Mistral now trAIns on user input by default, except on enterprise tier', desc: '' },
-      ja: { title: 'Mistral now trAIns on user input by default, except on enterprise tier', desc: '' },
-      en: { title: 'Mistral now trains on user input by default, except on enterprise tier', desc: '' },
+      id: 41109,
+      zh: { title: 'Can I opt out of my input or output data being used for 训练?', desc: '' },
+      ja: { title: 'Can I opt out of my input or output data being used for トレーニング?', desc: '' },
+      en: { title: 'Can I opt out of my input or output data being used for training?', desc: '' },
       source: 'HN (teekert)', time: '12:30', heat: 95,
-      tags: ["model"], url: 'https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training'
+      tags: ["deployment"], url: 'https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training'
     },
     {
-      id: 19922,
+      id: 95073,
       zh: { title: 'Check if a file was made with Claude', desc: '' },
       ja: { title: 'Check if a file was made with Claude', desc: '' },
       en: { title: 'Check if a file was made with Claude', desc: '' },
-      source: 'HN (frexs)', time: '12:23', heat: 80,
+      source: 'HN (frexs)', time: '12:23', heat: 95,
       tags: ["model"], url: 'https://claude.com/check-content'
     },
     {
-      id: 27854,
-      zh: { title: '分享： Windrunner – AI-powered project collaboration workspace', desc: '' },
-      ja: { title: 'シェア： Windrunner – AI-powered project collaboration workspace', desc: '' },
-      en: { title: 'Show HN: Windrunner – AI-powered project collaboration workspace', desc: '' },
-      source: 'HN (yuegui)', time: '12:19', heat: 53,
-      tags: ["model"], url: 'https://shzlw.github.io/windrunner/'
-    },
-    {
-      id: 39558,
-      zh: { title: 'Bassfinity for iOS – AI guide built on solunar data, weather, and bathymetry', desc: '' },
-      ja: { title: 'Bassfinity for iOS – AI guide built on solunar data, weather, and bathymetry', desc: '' },
-      en: { title: 'Bassfinity for iOS – AI guide built on solunar data, weather, and bathymetry', desc: '' },
-      source: 'HN (jequals5)', time: '12:05', heat: 51,
-      tags: ["tutorial"], url: 'https://www.bassfinity.com/blog/bassfinity-for-ios-the-whole-lake-in-your-pocket'
-    },
-    {
-      id: 97635,
-      zh: { title: 'VibeGuard – security linter for AI-generated code', desc: '' },
-      ja: { title: 'VibeGuard – security linter for AI-generated code', desc: '' },
-      en: { title: 'VibeGuard – security linter for AI-generated code', desc: '' },
-      source: 'HN (obadafid)', time: '10:53', heat: 52,
-      tags: ["safety", "coding"], url: 'https://github.com/zeroFhacker/vibeguard'
-    },
-    {
-      id: 87918,
-      zh: { title: 'SkyProduction天工工作台：从剧本到成片，一套工作台把精品短剧创作真正跑起来', desc: '' },
-      ja: { title: 'SkyProduction天工工作台：从剧本到成片，一套工作台把精品短剧创作真正跑起来', desc: '' },
-      en: { title: 'SkyProduction天工工作台：从剧本到成片，一套工作台把精品短剧创作真正跑起来', desc: '' },
-      source: '量子位', time: '10:31', heat: 65,
-      tags: ["model"], url: '#'
-    },
-    {
-      id: 76537,
+      id: 79391,
       zh: { title: 'Quasar 438B: Europe\'s Leading AI Model', desc: '' },
       ja: { title: 'Quasar 438B: Europe\'s Leading AI Model', desc: '' },
       en: { title: 'Quasar 438B: Europe\'s Leading AI Model', desc: '' },
@@ -347,15 +387,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model'
     },
     {
-      id: 53520,
-      zh: { title: '分享： I Have Been Clawed – Index of 编程 智能体 incidents', desc: '' },
-      ja: { title: 'シェア： I Have Been Clawed – Index of コーディング エージェント incidents', desc: '' },
-      en: { title: 'Show HN: I Have Been Clawed – Index of coding agent incidents', desc: '' },
-      source: 'HN (nezhar)', time: '05:23', heat: 58,
-      tags: ["agent", "coding", "policy"], url: 'https://ihavebeenclawed.com/'
-    },
-    {
-      id: 83876,
+      id: 93167,
       zh: { title: 'The Emergent Symbolic Structure of Artificial 神经网络s', desc: '' },
       ja: { title: 'The Emergent Symbolic Structure of Artificial ニューラルネットワークs', desc: '' },
       en: { title: 'The Emergent Symbolic Structure of Artificial Neural Networks', desc: '' },
@@ -365,7 +397,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-01', items: [
     {
-      id: 36758,
+      id: 76493,
       zh: { title: 'The efficient frontier of 大语言模型 推理', desc: '' },
       ja: { title: 'The efficient frontier of 大規模言語モデル 推論', desc: '' },
       en: { title: 'The efficient frontier of LLM inference', desc: '' },
@@ -373,7 +405,7 @@ const NEWS_DATA = [
       tags: ["model"], url: '#'
     },
     {
-      id: 67202,
+      id: 93549,
       zh: { title: 'The efficient frontier of 大语言模型 推理', desc: '' },
       ja: { title: 'The efficient frontier of 大規模言語モデル 推論', desc: '' },
       en: { title: 'The efficient frontier of LLM inference', desc: '' },
@@ -381,23 +413,7 @@ const NEWS_DATA = [
       tags: ["model", "deployment"], url: 'https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/'
     },
     {
-      id: 15592,
-      zh: { title: '分享： Weedout – Safari extension that hides YouTube AI-labeled videos', desc: '' },
-      ja: { title: 'シェア： Weedout – Safari extension that hides YouTube AI-labeled videos', desc: '' },
-      en: { title: 'Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos', desc: '' },
-      source: 'HN (masteranza)', time: '22:06', heat: 95,
-      tags: ["product", "multimodal", "video"], url: 'https://masteranza.github.io/weedout/'
-    },
-    {
-      id: 47456,
-      zh: { title: 'The ChatGPT/Codex app bundles a full copy of LibreOffice', desc: '' },
-      ja: { title: 'The ChatGPT/Codex app bundles a full copy of LibreOffice', desc: '' },
-      en: { title: 'The ChatGPT/Codex app bundles a full copy of LibreOffice', desc: '' },
-      source: 'HN (timpera)', time: '20:07', heat: 95,
-      tags: ["product", "coding"], url: 'https://simonwillison.net/2026/Sep/1/codex-libreoffice/'
-    },
-    {
-      id: 32444,
+      id: 60919,
       zh: { title: 'How accurate have Ed Zitron\'s AI skeptic predictions been?', desc: '' },
       ja: { title: 'How accurate have Ed Zitron\'s AI skeptic predictions been?', desc: '' },
       en: { title: 'How accurate have Ed Zitron\'s AI skeptic predictions been?', desc: '' },
@@ -405,7 +421,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://danluu.com/zitron/'
     },
     {
-      id: 63713,
+      id: 11340,
       zh: { title: 'Claude Fable 5.1 and Claude Mythos 5.1', desc: '' },
       ja: { title: 'Claude Fable 5.1 and Claude Mythos 5.1', desc: '' },
       en: { title: 'Claude Fable 5.1 and Claude Mythos 5.1', desc: '' },
@@ -413,7 +429,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://www.anthropic.com/claude-fable-and-mythos-5-1'
     },
     {
-      id: 20845,
+      id: 40211,
       zh: { title: 'Launch HN: Nori 机器人 (YC S26) – A low-cost humanoid robot for development', desc: '' },
       ja: { title: 'Launch HN: Nori ロボティクス (YC S26) – A low-cost humanoid robot for development', desc: '' },
       en: { title: 'Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development', desc: '' },
@@ -421,25 +437,25 @@ const NEWS_DATA = [
       tags: ["model", "robotics"], url: 'https://www.norirobotics.com/'
     },
     {
-      id: 66880,
-      zh: { title: 'Praearcturus gigas: giant scorpion from Lower Devonian (Lochkovian) of BritAIn', desc: '' },
-      ja: { title: 'Praearcturus gigas: giant scorpion from Lower Devonian (Lochkovian) of BritAIn', desc: '' },
-      en: { title: 'Praearcturus gigas: giant scorpion from Lower Devonian (Lochkovian) of Britain', desc: '' },
-      source: 'HN (bryanrasmussen)', time: '14:05', heat: 54,
-      tags: ["model"], url: 'https://onlinelibrary.wiley.com/doi/10.1111/pala.70064'
-    },
-    {
-      id: 59653,
-      zh: { title: 'I trAIned a small Transformer in 1.5hrs and it beats many 大语言模型s', desc: '' },
-      ja: { title: 'I trAIned a small Transformer in 1.5hrs and it beats many 大規模言語モデルs', desc: '' },
-      en: { title: 'I trained a small transformer in 1.5hrs and it beats many LLMs', desc: '' },
-      source: 'HN (porridgeraisin)', time: '09:52', heat: 95,
-      tags: ["model"], url: 'https://mvakde.github.io/blog/44-on-arc-1/'
+      id: 91886,
+      zh: { title: 'We could save petabytes of cache stoRAGe with Zstandard and Pingora', desc: '' },
+      ja: { title: 'We could save petabytes of cache stoRAGe with Zstandard and Pingora', desc: '' },
+      en: { title: 'We could save petabytes of cache storage with Zstandard and Pingora', desc: '' },
+      source: 'HN (torutofu)', time: '13:41', heat: 65,
+      tags: ["model"], url: 'https://blog.cloudflare.com/cache-transcoding/'
     },
   ]},
   { day: '2026-08-31', items: [
     {
-      id: 10679,
+      id: 17550,
+      zh: { title: 'Discontinuation of third level domAIn registrations for the .name TLD [pdf]', desc: '' },
+      ja: { title: 'Discontinuation of third level domAIn registrations for the .name TLD [pdf]', desc: '' },
+      en: { title: 'Discontinuation of third level domain registrations for the .name TLD [pdf]', desc: '' },
+      source: 'HN (greyface-)', time: '23:24', heat: 70,
+      tags: ["model"], url: 'https://itp.cdn.icann.org/en/files/consensus-policies/rsep-2026013-name-request-15-04-2026-en.pdf'
+    },
+    {
+      id: 88303,
       zh: { title: 'How we configured OpenTelemetry logs in RAIls', desc: '' },
       ja: { title: 'How we configured OpenTelemetry logs in RAIls', desc: '' },
       en: { title: 'How we configured OpenTelemetry logs in Rails', desc: '' },
@@ -447,17 +463,17 @@ const NEWS_DATA = [
       tags: ["model"], url: '#'
     },
     {
-      id: 71725,
-      zh: { title: 'You Know Who Hates AI? Insurance ClAIms Adjusters', desc: '' },
-      ja: { title: 'You Know Who Hates AI? Insurance ClAIms Adjusters', desc: '' },
-      en: { title: 'You Know Who Hates AI? Insurance Claims Adjusters', desc: '' },
-      source: 'HN (joozio)', time: '11:01', heat: 95,
-      tags: ["model"], url: 'https://www.wired.com/story/insurance-claims-adjusters-really-hate-ai/'
+      id: 59544,
+      zh: { title: 'AI, ex-Soviet engineers, and the Holy GrAIl of rocketry', desc: '' },
+      ja: { title: 'AI, ex-Soviet engineers, and the Holy GrAIl of rocketry', desc: '' },
+      en: { title: 'AI, ex-Soviet engineers, and the Holy Grail of rocketry', desc: '' },
+      source: 'HN (rbanffy)', time: '09:04', heat: 67,
+      tags: ["model"], url: 'https://www.fastcompany.com/91563020/aspire-rocket-design-spacex'
     },
   ]},
   { day: '2026-08-30', items: [
     {
-      id: 71193,
+      id: 23151,
       zh: { title: 'How to build a 扩散 language model', desc: '' },
       ja: { title: 'How to build a 拡散 language model', desc: '' },
       en: { title: 'How to build a diffusion language model', desc: '' },
@@ -467,25 +483,17 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-29', items: [
     {
-      id: 97704,
+      id: 40873,
       zh: { title: 'The Rise and Fall of 智能体 Civilizations', desc: '' },
       ja: { title: 'The Rise and Fall of エージェント Civilizations', desc: '' },
       en: { title: 'The Rise and Fall of Agent Civilizations', desc: '' },
       source: 'HN (consumer451)', time: '23:43', heat: 95,
       tags: ["model"], url: '#'
     },
-    {
-      id: 68862,
-      zh: { title: 'Building 自主 Goal Loops That Deliver', desc: '' },
-      ja: { title: 'Building 自律 Goal Loops That Deliver', desc: '' },
-      en: { title: 'Building Autonomous Goal Loops That Deliver', desc: '' },
-      source: 'HN (jarredkenny)', time: '11:49', heat: 73,
-      tags: ["agent"], url: 'https://jx0.ca/building-autonomous-goal-loops-that-deliver/'
-    },
   ]},
   { day: '2026-08-28', items: [
     {
-      id: 45382,
+      id: 11819,
       zh: { title: 'I accidentally turned 大语言模型 memory into program analysis', desc: '' },
       ja: { title: 'I accidentally turned 大規模言語モデル memory into program analysis', desc: '' },
       en: { title: 'I accidentally turned LLM memory into program analysis', desc: '' },
@@ -495,7 +503,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-27', items: [
     {
-      id: 59801,
+      id: 72115,
       zh: { title: 'AI Engineer Notebooks – free, framework-free RAG/智能体s/evals on Colab', desc: '' },
       ja: { title: 'AI Engineer Notebooks – free, framework-free RAG/エージェントs/evals on Colab', desc: '' },
       en: { title: 'AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab', desc: '' },
@@ -505,7 +513,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-26', items: [
     {
-      id: 64816,
+      id: 48904,
       zh: { title: 'WebMCP Challenge – OpenAI', desc: '' },
       ja: { title: 'WebMCP Challenge – OpenAI', desc: '' },
       en: { title: 'WebMCP Challenge – OpenAI', desc: '' },
@@ -515,7 +523,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-25', items: [
     {
-      id: 26626,
+      id: 11200,
       zh: { title: 'MAIao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others', desc: '' },
       ja: { title: 'MAIao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others', desc: '' },
       en: { title: 'Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others', desc: '' },
@@ -525,7 +533,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-24', items: [
     {
-      id: 42414,
+      id: 61173,
       zh: { title: 'I, for one, can\', desc: '' },
       ja: { title: 'I, for one, can\', desc: '' },
       en: { title: 'I, for one, can\', desc: '' },
@@ -535,7 +543,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-23', items: [
     {
-      id: 60345,
+      id: 78816,
       zh: { title: 'I built a low-latency AI companion that plays Skyrim with me', desc: '' },
       ja: { title: 'I built a low-latency AI companion that plays Skyrim with me', desc: '' },
       en: { title: 'I built a low-latency AI companion that plays Skyrim with me', desc: '' },
@@ -545,7 +553,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-22', items: [
     {
-      id: 55223,
+      id: 13612,
       zh: { title: 'AI has fAIled to win people\', desc: '' },
       ja: { title: 'AI has fAIled to win people\', desc: '' },
       en: { title: 'AI has failed to win people\', desc: '' },
@@ -555,7 +563,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-21', items: [
     {
-      id: 67284,
+      id: 24926,
       zh: { title: 'A Call for Action: The "Leiden Declaration on AI and Math"', desc: '' },
       ja: { title: 'A Call for Action: The "Leiden Declaration on AI and Math"', desc: '' },
       en: { title: 'A Call for Action: The "Leiden Declaration on AI and Math"', desc: '' },
@@ -565,7 +573,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-20', items: [
     {
-      id: 80321,
+      id: 15251,
       zh: { title: 'Early-life stress leaves a \', desc: '' },
       ja: { title: 'Early-life stress leaves a \', desc: '' },
       en: { title: 'Early-life stress leaves a \', desc: '' },
@@ -575,7 +583,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-19', items: [
     {
-      id: 70268,
+      id: 78054,
       zh: { title: 'Collaborative Human 智能体 Protocol (CHAP)', desc: '' },
       ja: { title: 'Collaborative Human エージェント Protocol (CHAP)', desc: '' },
       en: { title: 'Collaborative Human Agent Protocol (CHAP)', desc: '' },
@@ -585,7 +593,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-18', items: [
     {
-      id: 82104,
+      id: 73805,
       zh: { title: 'Have an 智能体 Babysit Your Deployments', desc: '' },
       ja: { title: 'Have an エージェント Babysit Your Deployments', desc: '' },
       en: { title: 'Have an Agent Babysit Your Deployments', desc: '' },
@@ -595,7 +603,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-17', items: [
     {
-      id: 42874,
+      id: 63618,
       zh: { title: 'RepAIr Cafe – Fix Your Broken Items', desc: '' },
       ja: { title: 'RepAIr Cafe – Fix Your Broken Items', desc: '' },
       en: { title: 'Repair Cafe – Fix Your Broken Items', desc: '' },
@@ -605,7 +613,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-16', items: [
     {
-      id: 53868,
+      id: 78231,
       zh: { title: 'Anthropic CEO says the way for AI to win over the public is to cure cancer', desc: '' },
       ja: { title: 'Anthropic CEO says the way for AI to win over the public is to cure cancer', desc: '' },
       en: { title: 'Anthropic CEO says the way for AI to win over the public is to cure cancer', desc: '' },
@@ -615,7 +623,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-15', items: [
     {
-      id: 67955,
+      id: 15845,
       zh: { title: 'AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code', desc: '' },
       ja: { title: 'AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code', desc: '' },
       en: { title: 'AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code', desc: '' },
@@ -625,7 +633,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-14', items: [
     {
-      id: 47857,
+      id: 32729,
       zh: { title: 'Baking a Model: A Metaphor for 大语言模型 训练', desc: '' },
       ja: { title: 'Baking a Model: A Metaphor for 大規模言語モデル トレーニング', desc: '' },
       en: { title: 'Baking a Model: A Metaphor for LLM Training', desc: '' },
@@ -635,7 +643,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-13', items: [
     {
-      id: 72631,
+      id: 56150,
       zh: { title: 'How AI text watermarking works', desc: '' },
       ja: { title: 'How AI text watermarking works', desc: '' },
       en: { title: 'How AI text watermarking works', desc: '' },
@@ -645,7 +653,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-12', items: [
     {
-      id: 49196,
+      id: 32480,
       zh: { title: 'Archie G. Norcross\', desc: '' },
       ja: { title: 'Archie G. Norcross\', desc: '' },
       en: { title: 'Archie G. Norcross\', desc: '' },
@@ -655,7 +663,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-11', items: [
     {
-      id: 69282,
+      id: 17709,
       zh: { title: 'Watching Roku\', desc: '' },
       ja: { title: 'Watching Roku\', desc: '' },
       en: { title: 'Watching Roku\', desc: '' },
@@ -665,7 +673,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-10', items: [
     {
-      id: 40639,
+      id: 49049,
       zh: { title: 'World TrAIn Map – 1247 trAIn routes around the world', desc: '' },
       ja: { title: 'World TrAIn Map – 1247 trAIn routes around the world', desc: '' },
       en: { title: 'World Train Map – 1247 train routes around the world', desc: '' },
@@ -675,7 +683,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-09', items: [
     {
-      id: 92578,
+      id: 65634,
       zh: { title: 'AI assistant hacks gym website in first known Australian 自主 cyber attack', desc: '' },
       ja: { title: 'AI assistant hacks gym website in first known Australian 自律 cyber attack', desc: '' },
       en: { title: 'AI assistant hacks gym website in first known Australian autonomous cyber attack', desc: '' },
@@ -685,7 +693,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-08', items: [
     {
-      id: 43164,
+      id: 19934,
       zh: { title: '提问： How do you go from writing code to deploying with 智能体s?', desc: '' },
       ja: { title: '質問： How do you go from writing code to deploying with エージェントs?', desc: '' },
       en: { title: 'Ask HN: How do you go from writing code to deploying with agents?', desc: '' },
@@ -695,7 +703,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-07', items: [
     {
-      id: 28867,
+      id: 43839,
       zh: { title: 'YouTube\', desc: '' },
       ja: { title: 'YouTube\', desc: '' },
       en: { title: 'YouTube\', desc: '' },
@@ -705,7 +713,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-06', items: [
     {
-      id: 36435,
+      id: 31995,
       zh: { title: 'An 智能体ic IDE That Builds Itself', desc: '' },
       ja: { title: 'An エージェントic IDE That Builds Itself', desc: '' },
       en: { title: 'An Agentic IDE That Builds Itself', desc: '' },
@@ -715,7 +723,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-05', items: [
     {
-      id: 34661,
+      id: 66448,
       zh: { title: 'Prime 智能体: A self-improving RLM 智能体', desc: '' },
       ja: { title: 'Prime エージェント: A self-improving RLM エージェント', desc: '' },
       en: { title: 'Prime Agent: A self-improving RLM agent', desc: '' },
@@ -725,7 +733,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-04', items: [
     {
-      id: 76352,
+      id: 42172,
       zh: { title: 'Eight Myths on Software Engineering and GenAI', desc: '' },
       ja: { title: 'Eight Myths on Software Engineering and GenAI', desc: '' },
       en: { title: 'Eight Myths on Software Engineering and GenAI', desc: '' },
