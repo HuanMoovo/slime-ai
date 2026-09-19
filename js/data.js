@@ -1,187 +1,267 @@
 // Slime AI — Auto-generated news data
-// Generated: 2026-09-19T02:55:29.774167+00:00
+// Generated: 2026-09-19T10:13:45.246823+00:00
 const NEWS_DATA = [
   { day: '2026-09-19', items: [
     {
-      id: 77370,
+      id: 78489,
+      zh: { title: 'Verifiable Social 推理 for 大语言模型 Assistants', desc: '' },
+      ja: { title: 'Verifiable Social 推論 for 大規模言語モデル Assistants', desc: '' },
+      en: { title: 'Verifiable Social Reasoning for LLM Assistants', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 82,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.17496'
+    },
+    {
+      id: 51187,
+      zh: { title: 'Self-Evolving Search Index', desc: '' },
+      ja: { title: 'Self-Evolving Search Index', desc: '' },
+      en: { title: 'Self-Evolving Search Index', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 85,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.19656'
+    },
+    {
+      id: 73827,
+      zh: { title: 'Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of 大语言模型 Test-Time Scaling', desc: '' },
+      ja: { title: 'Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of 大規模言語モデル Test-Time Scaling', desc: '' },
+      en: { title: 'Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 74,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.19499'
+    },
+    {
+      id: 38943,
+      zh: { title: 'VākQA: A 基准 and Evaluation Study for Telugu Spoken Factoid Question Answering', desc: '' },
+      ja: { title: 'VākQA: A ベンチマーク and Evaluation Study for Telugu Spoken Factoid Question Answering', desc: '' },
+      en: { title: 'VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 72,
+      tags: ["paper"], url: 'https://huggingface.co/papers/2609.19879'
+    },
+    {
+      id: 68947,
+      zh: { title: 'Don\'t Mask the Environment: Observation Supervision Changes How 智能体s Explore Under RL', desc: '' },
+      ja: { title: 'Don\'t Mask the Environment: Observation Supervision Changes How エージェントs Explore Under RL', desc: '' },
+      en: { title: 'Don\'t Mask the Environment: Observation Supervision Changes How Agents Explore Under RL', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 82,
+      tags: ["agent", "multimodal"], url: 'https://huggingface.co/papers/2609.20715'
+    },
+    {
+      id: 65223,
+      zh: { title: 'Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts', desc: '' },
+      ja: { title: 'Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts', desc: '' },
+      en: { title: 'Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 65,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.05661'
+    },
+    {
+      id: 34201,
+      zh: { title: 'Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal 生成式 Model', desc: '' },
+      ja: { title: 'Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal 生成的 Model', desc: '' },
+      en: { title: 'Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 69,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.18323'
+    },
+    {
+      id: 94713,
+      zh: { title: 'FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations', desc: '' },
+      ja: { title: 'FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations', desc: '' },
+      en: { title: 'FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 67,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.20817'
+    },
+    {
+      id: 15179,
+      zh: { title: 'When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation', desc: '' },
+      ja: { title: 'When EOS トークンs Disagree: Understanding Length Inflation in On-Policy Distillation', desc: '' },
+      en: { title: 'When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 74,
+      tags: ["policy"], url: 'https://huggingface.co/papers/2609.20511'
+    },
+    {
+      id: 67702,
+      zh: { title: 'PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?', desc: '' },
+      ja: { title: 'PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?', desc: '' },
+      en: { title: 'PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?', desc: '' },
+      source: 'Hugging Face', time: '10:13', heat: 67,
+      tags: ["model"], url: 'https://huggingface.co/papers/2609.18605'
+    },
+    {
+      id: 68674,
+      zh: { title: '千万奖池找“鲸锐”！单项奖金200万，只等一个最会用AI讲故事的你', desc: '' },
+      ja: { title: '千万奖池找“鲸锐”！单项奖金200万，只等一个最会用AI讲故事的你', desc: '' },
+      en: { title: '千万奖池找“鲸锐”！单项奖金200万，只等一个最会用AI讲故事的你', desc: '' },
+      source: '量子位', time: '10:13', heat: 71,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492501.html'
+    },
+    {
+      id: 18890,
+      zh: { title: '华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够', desc: '' },
+      ja: { title: '华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够', desc: '' },
+      en: { title: '华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够', desc: '' },
+      source: '量子位', time: '10:13', heat: 83,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492476.html'
+    },
+    {
+      id: 54886,
+      zh: { title: '陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”', desc: '' },
+      ja: { title: '陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”', desc: '' },
+      en: { title: '陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”', desc: '' },
+      source: '量子位', time: '10:13', heat: 85,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492467.html'
+    },
+    {
+      id: 84085,
+      zh: { title: 'AI离“理解万物”还有多远？先拿癌细胞和行星轨道试试水', desc: '' },
+      ja: { title: 'AI离“理解万物”还有多远？先拿癌细胞和行星轨道试试水', desc: '' },
+      en: { title: 'AI离“理解万物”还有多远？先拿癌细胞和行星轨道试试水', desc: '' },
+      source: '量子位', time: '10:13', heat: 66,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492429.html'
+    },
+    {
+      id: 64516,
+      zh: { title: '无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向', desc: '' },
+      ja: { title: '无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向', desc: '' },
+      en: { title: '无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向', desc: '' },
+      source: '量子位', time: '10:13', heat: 78,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492426.html'
+    },
+    {
+      id: 68712,
+      zh: { title: '达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布', desc: '' },
+      ja: { title: '达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布', desc: '' },
+      en: { title: '达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布', desc: '' },
+      source: '量子位', time: '10:13', heat: 80,
+      tags: ["model", "product"], url: 'https://www.qbitai.com/2026/09/492421.html'
+    },
+    {
+      id: 38366,
+      zh: { title: '具身智能技术路线尚未定型，基础设施却先收敛', desc: '' },
+      ja: { title: '具身智能技术路线尚未定型，基础设施却先收敛', desc: '' },
+      en: { title: '具身智能技术路线尚未定型，基础设施却先收敛', desc: '' },
+      source: '量子位', time: '10:13', heat: 70,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492238.html'
+    },
+    {
+      id: 67377,
+      zh: { title: 'AGI新战场谷歌亚马逊巨头激战，杀出个中国LimiX-2赢了又赢', desc: '' },
+      ja: { title: 'AGI新战场谷歌亚马逊巨头激战，杀出个中国LimiX-2赢了又赢', desc: '' },
+      en: { title: 'AGI新战场谷歌亚马逊巨头激战，杀出个中国LimiX-2赢了又赢', desc: '' },
+      source: '量子位', time: '10:13', heat: 66,
+      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492175.html'
+    },
+    {
+      id: 63941,
+      zh: { title: 'AI posters don\'t have to be horrible', desc: '' },
+      ja: { title: 'AI posters don\'t have to be horrible', desc: '' },
+      en: { title: 'AI posters don\'t have to be horrible', desc: '' },
+      source: 'HN (ereiamjh)', time: '09:20', heat: 57,
+      tags: ["model"], url: 'https://john.hartnup.uk/2026/06/07/ai-event-posters.html'
+    },
+    {
+      id: 87250,
+      zh: { title: 'AI hallucination nearly triggers US Military operation', desc: '' },
+      ja: { title: 'AI hallucination nearly triggers US Military operation', desc: '' },
+      en: { title: 'AI hallucination nearly triggers US Military operation', desc: '' },
+      source: 'HN (sbulaev)', time: '08:07', heat: 53,
+      tags: ["safety"], url: 'https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/'
+    },
+    {
+      id: 49914,
+      zh: { title: 'EFF Statement on California Governor\'s Executive Order on AI', desc: '' },
+      ja: { title: 'EFF Statement on California Governor\'s Executive Order on AI', desc: '' },
+      en: { title: 'EFF Statement on California Governor\'s Executive Order on AI', desc: '' },
+      source: 'HN (mdp2021)', time: '07:15', heat: 55,
+      tags: ["model"], url: 'https://www.eff.org/deeplinks/2026/09/eff-statement-california-governors-executive-order-ai'
+    },
+    {
+      id: 90834,
+      zh: { title: 'The Case of Elias Thorne, Imaginary Man AI Chatbots Are Obsessed With', desc: '' },
+      ja: { title: 'The Case of Elias Thorne, Imaginary Man AI Chatbots Are Obsessed With', desc: '' },
+      en: { title: 'The Case of Elias Thorne, Imaginary Man AI Chatbots Are Obsessed With', desc: '' },
+      source: 'HN (celadonuproot)', time: '07:13', heat: 57,
+      tags: ["model"], url: 'https://www.vice.com/en/article/the-strange-case-of-elias-thorne-the-imaginary-man-ai-chatbots-are-obsessed-with/'
+    },
+    {
+      id: 87323,
+      zh: { title: 'Claude couldn\'t hack OpenAI. Then Anthropic shipped Opus 5', desc: '' },
+      ja: { title: 'Claude couldn\'t hack OpenAI. Then Anthropic shipped Opus 5', desc: '' },
+      en: { title: 'Claude couldn\'t hack OpenAI. Then Anthropic shipped Opus 5', desc: '' },
+      source: 'HN (stared)', time: '06:52', heat: 54,
+      tags: ["model"], url: 'https://thenewstack.io/claude-exploits-openai-forum/'
+    },
+    {
+      id: 65260,
+      zh: { title: 'GPT-6 Astra Solves a WWI German Radio Cipher', desc: '' },
+      ja: { title: 'GPT-6 Astra Solves a WWI German Radio Cipher', desc: '' },
+      en: { title: 'GPT-6 Astra Solves a WWI German Radio Cipher', desc: '' },
+      source: 'HN (nsoonhui)', time: '06:41', heat: 95,
+      tags: ["model"], url: 'https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio'
+    },
+    {
+      id: 44005,
+      zh: { title: '谷歌\'s Gemini AI hacked three companies in security test', desc: '' },
+      ja: { title: 'Google\'s Gemini AI hacked three companies in security test', desc: '' },
+      en: { title: 'Google\'s Gemini AI hacked three companies in security test', desc: '' },
+      source: 'HN (luxpir)', time: '06:09', heat: 59,
+      tags: ["model", "safety"], url: 'https://www.bbc.co.uk/news/articles/c607l0k72rlvo'
+    },
+    {
+      id: 51632,
+      zh: { title: 'Human brAIn is two separate organs, Stanford Medicine-led research finds', desc: '' },
+      ja: { title: 'Human brAIn is two separate organs, Stanford Medicine-led research finds', desc: '' },
+      en: { title: 'Human brain is two separate organs, Stanford Medicine-led research finds', desc: '' },
+      source: 'HN (emigre)', time: '05:48', heat: 95,
+      tags: ["paper"], url: 'https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html'
+    },
+    {
+      id: 27691,
+      zh: { title: 'Stepfun Step 5 Preview (大语言模型): On AA Pareto frontier', desc: '' },
+      ja: { title: 'Stepfun Step 5 Preview (大規模言語モデル): On AA Pareto frontier', desc: '' },
+      en: { title: 'Stepfun Step 5 Preview (LLM): On AA Pareto frontier', desc: '' },
+      source: 'HN (AnodicElegy)', time: '05:42', heat: 55,
+      tags: ["model"], url: 'https://artificialanalysis.ai/models/step-5'
+    },
+    {
+      id: 14639,
+      zh: { title: 'NASA-IBM Lunar Foundation 开源 Geospatial AI Model', desc: '' },
+      ja: { title: 'NASA-IBM Lunar Foundation オープンソース Geospatial AI Model', desc: '' },
+      en: { title: 'NASA-IBM Lunar Foundation open-Source Geospatial AI Model', desc: '' },
+      source: 'HN (noobplus)', time: '04:44', heat: 62,
+      tags: ["model", "open-source"], url: 'https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/'
+    },
+    {
+      id: 45638,
       zh: { title: 'Verifiable Social 推理 for 大语言模型 Assistants', desc: '' },
       ja: { title: 'Verifiable Social 推論 for 大規模言語モデル Assistants', desc: '' },
       en: { title: 'Verifiable Social Reasoning for LLM Assistants', desc: '' },
       source: 'Hugging Face', time: '02:55', heat: 81,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.17496'
-    },
-    {
-      id: 46883,
-      zh: { title: 'Self-Evolving Search Index', desc: '' },
-      ja: { title: 'Self-Evolving Search Index', desc: '' },
-      en: { title: 'Self-Evolving Search Index', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 80,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.19656'
-    },
-    {
-      id: 91884,
-      zh: { title: 'Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of 大语言模型 Test-Time Scaling', desc: '' },
-      ja: { title: 'Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of 大規模言語モデル Test-Time Scaling', desc: '' },
-      en: { title: 'Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 73,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.19499'
-    },
-    {
-      id: 37577,
-      zh: { title: 'VākQA: A 基准 and Evaluation Study for Telugu Spoken Factoid Question Answering', desc: '' },
-      ja: { title: 'VākQA: A ベンチマーク and Evaluation Study for Telugu Spoken Factoid Question Answering', desc: '' },
-      en: { title: 'VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 67,
-      tags: ["paper"], url: 'https://huggingface.co/papers/2609.19879'
-    },
-    {
-      id: 53998,
-      zh: { title: 'Don\'t Mask the Environment: Observation Supervision Changes How 智能体s Explore Under RL', desc: '' },
-      ja: { title: 'Don\'t Mask the Environment: Observation Supervision Changes How エージェントs Explore Under RL', desc: '' },
-      en: { title: 'Don\'t Mask the Environment: Observation Supervision Changes How Agents Explore Under RL', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 80,
-      tags: ["agent", "multimodal"], url: 'https://huggingface.co/papers/2609.20715'
-    },
-    {
-      id: 69223,
-      zh: { title: 'Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts', desc: '' },
-      ja: { title: 'Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts', desc: '' },
-      en: { title: 'Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 84,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.05661'
-    },
-    {
-      id: 60082,
-      zh: { title: 'Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal 生成式 Model', desc: '' },
-      ja: { title: 'Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal 生成的 Model', desc: '' },
-      en: { title: 'Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 82,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.18323'
-    },
-    {
-      id: 15782,
-      zh: { title: 'FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations', desc: '' },
-      ja: { title: 'FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations', desc: '' },
-      en: { title: 'FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 76,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.20817'
-    },
-    {
-      id: 20259,
-      zh: { title: 'When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation', desc: '' },
-      ja: { title: 'When EOS トークンs Disagree: Understanding Length Inflation in On-Policy Distillation', desc: '' },
-      en: { title: 'When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 84,
-      tags: ["policy"], url: 'https://huggingface.co/papers/2609.20511'
-    },
-    {
-      id: 31279,
-      zh: { title: 'PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?', desc: '' },
-      ja: { title: 'PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?', desc: '' },
-      en: { title: 'PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?', desc: '' },
-      source: 'Hugging Face', time: '02:55', heat: 75,
-      tags: ["model"], url: 'https://huggingface.co/papers/2609.18605'
-    },
-    {
-      id: 67746,
-      zh: { title: '无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向', desc: '' },
-      ja: { title: '无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向', desc: '' },
-      en: { title: '无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向', desc: '' },
-      source: '量子位', time: '02:55', heat: 74,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492426.html'
-    },
-    {
-      id: 47433,
-      zh: { title: '达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布', desc: '' },
-      ja: { title: '达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布', desc: '' },
-      en: { title: '达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布', desc: '' },
-      source: '量子位', time: '02:55', heat: 80,
-      tags: ["model", "product"], url: 'https://www.qbitai.com/2026/09/492421.html'
-    },
-    {
-      id: 12554,
-      zh: { title: '具身智能技术路线尚未定型，基础设施却先收敛', desc: '' },
-      ja: { title: '具身智能技术路线尚未定型，基础设施却先收敛', desc: '' },
-      en: { title: '具身智能技术路线尚未定型，基础设施却先收敛', desc: '' },
-      source: '量子位', time: '02:55', heat: 63,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492238.html'
-    },
-    {
-      id: 25694,
-      zh: { title: 'AGI新战场谷歌亚马逊巨头激战，杀出个中国LimiX-2赢了又赢', desc: '' },
-      ja: { title: 'AGI新战场谷歌亚马逊巨头激战，杀出个中国LimiX-2赢了又赢', desc: '' },
-      en: { title: 'AGI新战场谷歌亚马逊巨头激战，杀出个中国LimiX-2赢了又赢', desc: '' },
-      source: '量子位', time: '02:55', heat: 64,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492175.html'
-    },
-    {
-      id: 73992,
-      zh: { title: '白天务农晚上码农，这个斐济农民跨越一万公里来拼多多取经', desc: '' },
-      ja: { title: '白天务农晚上码农，这个斐济农民跨越一万公里来拼多多取经', desc: '' },
-      en: { title: '白天务农晚上码农，这个斐济农民跨越一万公里来拼多多取经', desc: '' },
-      source: '量子位', time: '02:55', heat: 81,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/09/492015.html'
-    },
-    {
-      id: 12110,
-      zh: { title: 'AGI最难一战，竟在医院！中国AI登上Science，医生不怕失业还催着上线', desc: '' },
-      ja: { title: 'AGI最难一战，竟在医院！中国AI登上Science，医生不怕失业还催着上线', desc: '' },
-      en: { title: 'AGI最难一战，竟在医院！中国AI登上Science，医生不怕失业还催着上线', desc: '' },
-      source: '量子位', time: '02:55', heat: 71,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/09/491875.html'
-    },
-    {
-      id: 92265,
-      zh: { title: 'Manus重生第17天，估值居然就翻倍了', desc: '' },
-      ja: { title: 'Manus重生第17天，估值居然就翻倍了', desc: '' },
-      en: { title: 'Manus重生第17天，估值居然就翻倍了', desc: '' },
-      source: '量子位', time: '02:55', heat: 68,
-      tags: ["model"], url: 'https://www.qbitai.com/2026/09/491764.html'
-    },
-    {
-      id: 68021,
-      zh: { title: '刚刚，Claude Code大重构！内部3万Agent管理技术免费开放', desc: '' },
-      ja: { title: '刚刚，Claude Code大重构！内部3万Agent管理技术免费开放', desc: '' },
-      en: { title: '刚刚，Claude Code大重构！内部3万Agent管理技术免费开放', desc: '' },
-      source: '量子位', time: '02:55', heat: 71,
-      tags: ["model", "agent", "coding"], url: 'https://www.qbitai.com/2026/09/491711.html'
-    },
-    {
-      id: 50709,
-      zh: { title: 'Gemini hacked three companies in first known breakout by 谷歌\'s AI', desc: '' },
-      ja: { title: 'Gemini hacked three companies in first known breakout by Google\'s AI', desc: '' },
-      en: { title: 'Gemini hacked three companies in first known breakout by Google\'s AI', desc: '' },
-      source: 'HN (usernomdeguerre)', time: '01:40', heat: 56,
-      tags: ["model"], url: 'https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/'
-    },
-    {
-      id: 93475,
-      zh: { title: '谷歌\'s Gemini becomes latest AI model to break out and hack computer systems', desc: '' },
-      ja: { title: 'Google\'s Gemini becomes latest AI model to break out and hack computer systems', desc: '' },
-      en: { title: 'Google\'s Gemini becomes latest AI model to break out and hack computer systems', desc: '' },
-      source: 'HN (ahmedhossamdev)', time: '01:24', heat: 52,
-      tags: ["model"], url: 'https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html'
+      tags: ["model"], url: '#'
     },
   ]},
   { day: '2026-09-18', items: [
     {
-      id: 50592,
+      id: 96223,
       zh: { title: 'Alibaba 开源s AI model that can detect cancer and nearly 150 conditions', desc: '' },
       ja: { title: 'Alibaba オープンソースs AI model that can detect cancer and nearly 150 conditions', desc: '' },
       en: { title: 'Alibaba open-sources AI model that can detect cancer and nearly 150 conditions', desc: '' },
       source: 'HN (yogthos)', time: '23:54', heat: 70,
+      tags: ["model"], url: '#'
+    },
+    {
+      id: 42945,
+      zh: { title: 'Alibaba 开源s AI model that can detect cancer and nearly 150 conditions', desc: '' },
+      ja: { title: 'Alibaba オープンソースs AI model that can detect cancer and nearly 150 conditions', desc: '' },
+      en: { title: 'Alibaba open-sources AI model that can detect cancer and nearly 150 conditions', desc: '' },
+      source: 'HN (yogthos)', time: '23:54', heat: 95,
       tags: ["model", "open-source"], url: 'https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions'
     },
     {
-      id: 34698,
+      id: 51444,
       zh: { title: 'How OpenAI Used Its Own 大语言模型s to Design Its Jalapeño Chip', desc: '' },
       ja: { title: 'How OpenAI Used Its Own 大規模言語モデルs to Design Its Jalapeño Chip', desc: '' },
       en: { title: 'How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip', desc: '' },
-      source: 'HN (maxall4)', time: '23:04', heat: 82,
+      source: 'HN (maxall4)', time: '23:04', heat: 95,
       tags: ["model"], url: 'https://spectrum.ieee.org/llms-for-chip-design'
     },
     {
-      id: 66202,
+      id: 80118,
       zh: { title: 'Claude Code now reads 智能体S.md if there is no Claude.md', desc: '' },
       ja: { title: 'Claude Code now reads エージェントS.md if there is no Claude.md', desc: '' },
       en: { title: 'Claude Code now reads AGENTS.md if there is no Claude.md', desc: '' },
@@ -189,47 +269,23 @@ const NEWS_DATA = [
       tags: ["model", "agent", "coding"], url: 'https://code.claude.com/docs/en/changelog'
     },
     {
-      id: 34836,
-      zh: { title: 'Verifiable Social 推理 for 大语言模型 Assistants', desc: '' },
-      ja: { title: 'Verifiable Social 推論 for 大規模言語モデル Assistants', desc: '' },
-      en: { title: 'Verifiable Social Reasoning for LLM Assistants', desc: '' },
-      source: 'Hugging Face', time: '20:19', heat: 74,
-      tags: ["model"], url: '#'
-    },
-    {
-      id: 41506,
-      zh: { title: 'Korea rAIses data breach fines to 10% of revenue', desc: '' },
-      ja: { title: 'Korea rAIses data breach fines to 10% of revenue', desc: '' },
-      en: { title: 'Korea raises data breach fines to 10% of revenue', desc: '' },
-      source: 'HN (throw7)', time: '20:02', heat: 95,
-      tags: ["industry"], url: 'https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899'
-    },
-    {
-      id: 73200,
+      id: 48695,
       zh: { title: 'The Implications of Linguistic Illegibility for 大语言模型 Security', desc: '' },
       ja: { title: 'The Implications of Linguistic Illegibility for 大規模言語モデル Security', desc: '' },
       en: { title: 'The Implications of Linguistic Illegibility for LLM Security', desc: '' },
-      source: 'HN (tomjakubowski)', time: '19:00', heat: 77,
+      source: 'HN (tomjakubowski)', time: '19:00', heat: 84,
       tags: ["model", "safety"], url: 'https://arxiv.org/abs/2609.02852'
     },
     {
-      id: 16538,
+      id: 43851,
       zh: { title: 'Cache-to-Cache: Direct Semantic Communication Between 大语言模型s (2025)', desc: '' },
       ja: { title: 'Cache-to-Cache: Direct Semantic Communication Between 大規模言語モデルs (2025)', desc: '' },
       en: { title: 'Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)', desc: '' },
-      source: 'HN (rochansinha)', time: '18:55', heat: 84,
+      source: 'HN (rochansinha)', time: '18:55', heat: 93,
       tags: ["model"], url: 'https://arxiv.org/abs/2510.03215'
     },
     {
-      id: 50620,
-      zh: { title: 'Border 智能体s can search cellphones without a warrant or reasonable suspicion', desc: '' },
-      ja: { title: 'Border エージェントs can search cellphones without a warrant or reasonable suspicion', desc: '' },
-      en: { title: 'Border agents can search cellphones without a warrant or reasonable suspicion', desc: '' },
-      source: 'HN (mmh0000)', time: '18:08', heat: 95,
-      tags: ["agent"], url: 'https://lawandcrime.com/high-profile/the-government-was-entitled-trumps-border-agents-can-now-search-cellphones-without-a-warrant-probable-cause-or-reasonable-suspicion-2nd-circuit-rules/'
-    },
-    {
-      id: 89510,
+      id: 57305,
       zh: { title: 'US Military had close call after using AI for hallucinated intelligence report', desc: '' },
       ja: { title: 'US Military had close call after using AI for hallucinated intelligence report', desc: '' },
       en: { title: 'US Military had close call after using AI for hallucinated intelligence report', desc: '' },
@@ -237,7 +293,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship'
     },
     {
-      id: 46246,
+      id: 21048,
       zh: { title: 'Two parallel neural ectoderm progenitors contribute to the developing brAIn', desc: '' },
       ja: { title: 'Two parallel neural ectoderm progenitors contribute to the developing brAIn', desc: '' },
       en: { title: 'Two parallel neural ectoderm progenitors contribute to the developing brain', desc: '' },
@@ -245,23 +301,15 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://www.newscientist.com/article/2589739-our-brain-evolved-from-two-primitive-nervous-systems-that-merged/'
     },
     {
-      id: 33854,
-      zh: { title: 'GrassLobster: AI 智能体ic Generation of Parametric Geometry Workflows', desc: '' },
-      ja: { title: 'GrassLobster: AI エージェントic Generation of Parametric Geometry Workflows', desc: '' },
-      en: { title: 'GrassLobster: AI Agentic Generation of Parametric Geometry Workflows', desc: '' },
-      source: 'HN (aidog)', time: '15:04', heat: 64,
-      tags: ["agent"], url: 'https://www.miro.vision/index.php/2026/09/17/grasslobbster/'
-    },
-    {
-      id: 37271,
+      id: 56125,
       zh: { title: 'Mathematicians Build Long-AwAIted Graph Sandwich', desc: '' },
       ja: { title: 'Mathematicians Build Long-AwAIted Graph Sandwich', desc: '' },
       en: { title: 'Mathematicians Build Long-Awaited Graph Sandwich', desc: '' },
-      source: 'HN (ibobev)', time: '14:41', heat: 86,
+      source: 'HN (ibobev)', time: '14:41', heat: 88,
       tags: ["model"], url: 'https://www.quantamagazine.org/mathematicians-build-long-awaited-graph-sandwich-20260918/'
     },
     {
-      id: 59598,
+      id: 20375,
       zh: { title: 'AI chatbots are becoming experts at changing people\'s minds', desc: '' },
       ja: { title: 'AI chatbots are becoming experts at changing people\'s minds', desc: '' },
       en: { title: 'AI chatbots are becoming experts at changing people\'s minds', desc: '' },
@@ -269,15 +317,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://www.science.org/content/article/ai-chatbots-are-becoming-experts-changing-people-s-minds-what-s-their-secret'
     },
     {
-      id: 48391,
-      zh: { title: 'An empirical study of harness design for 编程 智能体s', desc: '' },
-      ja: { title: 'An empirical study of harness design for コーディング エージェントs', desc: '' },
-      en: { title: 'An empirical study of harness design for coding agents', desc: '' },
-      source: 'HN (wek)', time: '13:06', heat: 95,
-      tags: ["paper", "agent", "coding"], url: 'https://arxiv.org/abs/2609.20804'
-    },
-    {
-      id: 46708,
+      id: 76360,
       zh: { title: 'Warren Buffett Steps Down as Berkshire ChAIrman, Names Son to Replace Him', desc: '' },
       ja: { title: 'Warren Buffett Steps Down as Berkshire ChAIrman, Names Son to Replace Him', desc: '' },
       en: { title: 'Warren Buffett Steps Down as Berkshire Chairman, Names Son to Replace Him', desc: '' },
@@ -285,15 +325,7 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://www.nytimes.com/2026/09/18/business/warren-buffett-berkshire-chairman.html'
     },
     {
-      id: 82073,
-      zh: { title: '微软 exec called AI scraping \'the largest theft of labor in human history\'', desc: '' },
-      ja: { title: 'マイクロソフト exec called AI scraping \'the largest theft of labor in human history\'', desc: '' },
-      en: { title: 'Microsoft exec called AI scraping \'the largest theft of labor in human history\'', desc: '' },
-      source: 'HN (pluc)', time: '09:45', heat: 95,
-      tags: ["product"], url: 'https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/'
-    },
-    {
-      id: 65035,
+      id: 33800,
       zh: { title: 'A heap overflow and SSO misconfiguration to compromise OpenAI internal repos', desc: '' },
       ja: { title: 'A heap overflow and SSO misconfiguration to compromise OpenAI internal repos', desc: '' },
       en: { title: 'A heap overflow and SSO misconfiguration to compromise OpenAI internal repos', desc: '' },
@@ -303,7 +335,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-17', items: [
     {
-      id: 82912,
+      id: 17768,
       zh: { title: 'The FAA\', desc: '' },
       ja: { title: 'The FAA\', desc: '' },
       en: { title: 'The FAA\', desc: '' },
@@ -311,7 +343,7 @@ const NEWS_DATA = [
       tags: ["model"], url: '#'
     },
     {
-      id: 80915,
+      id: 52625,
       zh: { title: 'How to Write with an 大语言模型', desc: '' },
       ja: { title: 'How to Write with an 大規模言語モデル', desc: '' },
       en: { title: 'How to Write with an LLM', desc: '' },
@@ -319,7 +351,7 @@ const NEWS_DATA = [
       tags: ["model", "tutorial"], url: 'https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/'
     },
     {
-      id: 11276,
+      id: 42618,
       zh: { title: 'BonsAI 2 27B: Near-Lossless Compression in a 9x Smaller Footprint', desc: '' },
       ja: { title: 'BonsAI 2 27B: Near-Lossless Compression in a 9x Smaller Footprint', desc: '' },
       en: { title: 'Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint', desc: '' },
@@ -327,43 +359,43 @@ const NEWS_DATA = [
       tags: ["model"], url: 'https://prismml.com/news/bonsai-2-27b'
     },
     {
-      id: 30489,
+      id: 29072,
       zh: { title: '分享： Ax-check.com – Can 智能体s use your product?', desc: '' },
       ja: { title: 'シェア： Ax-check.com – Can エージェントs use your product?', desc: '' },
       en: { title: 'Show HN: Ax-check.com – Can agents use your product?', desc: '' },
-      source: 'HN (0x63_Problems)', time: '18:08', heat: 64,
+      source: 'HN (0x63_Problems)', time: '18:08', heat: 66,
       tags: ["product", "agent"], url: 'https://www.ax-check.com/'
     },
     {
-      id: 63499,
+      id: 98576,
       zh: { title: 'From Geometry to Algebra and Back AgAIn: 4000 Years of Papers (2023) [video]', desc: '' },
       ja: { title: 'From Geometry to Algebra and Back AgAIn: 4000 Years of Papers (2023) [video]', desc: '' },
       en: { title: 'From Geometry to Algebra and Back Again: 4000 Years of Papers (2023) [video]', desc: '' },
-      source: 'HN (surprisetalk)', time: '13:20', heat: 64,
+      source: 'HN (surprisetalk)', time: '13:20', heat: 68,
       tags: ["paper", "multimodal", "video"], url: 'https://www.youtube.com/watch?v=1cRFfYQYGxE'
-    },
-    {
-      id: 29316,
-      zh: { title: 'The American Religion of Self-StoRAGe Facilities', desc: '' },
-      ja: { title: 'The American Religion of Self-StoRAGe Facilities', desc: '' },
-      en: { title: 'The American Religion of Self-Storage Facilities', desc: '' },
-      source: 'HN (pseudolus)', time: '13:12', heat: 95,
-      tags: ["model"], url: 'https://www.newyorker.com/magazine/2026/09/21/the-american-religion-of-self-storage-facilities'
     },
   ]},
   { day: '2026-09-16', items: [
     {
-      id: 23924,
+      id: 92333,
       zh: { title: 'US interest rates rAIsed for first time in three years', desc: '' },
       ja: { title: 'US interest rates rAIsed for first time in three years', desc: '' },
       en: { title: 'US interest rates raised for first time in three years', desc: '' },
       source: 'HN (higginsniggins)', time: '23:25', heat: 89,
       tags: ["model"], url: '#'
     },
+    {
+      id: 12374,
+      zh: { title: 'You can run Git on object stoRAGe if you re-make packfiles', desc: '' },
+      ja: { title: 'You can run Git on object stoRAGe if you re-make packfiles', desc: '' },
+      en: { title: 'You can run Git on object storage if you re-make packfiles', desc: '' },
+      source: 'HN (evacchi)', time: '17:16', heat: 74,
+      tags: ["model"], url: 'https://www.tigrisdata.com/blog/objgit-packfiles/'
+    },
   ]},
   { day: '2026-09-15', items: [
     {
-      id: 87900,
+      id: 14079,
       zh: { title: 'The Siberian Ice MAIden and the Scythian World', desc: '' },
       ja: { title: 'The Siberian Ice MAIden and the Scythian World', desc: '' },
       en: { title: 'The Siberian Ice Maiden and the Scythian World', desc: '' },
@@ -371,7 +403,7 @@ const NEWS_DATA = [
       tags: ["model"], url: '#'
     },
     {
-      id: 13828,
+      id: 18230,
       zh: { title: 'Diplodocus, Long Thought Exclusively American, Turns Up in SpAIn', desc: '' },
       ja: { title: 'Diplodocus, Long Thought Exclusively American, Turns Up in SpAIn', desc: '' },
       en: { title: 'Diplodocus, Long Thought Exclusively American, Turns Up in Spain', desc: '' },
@@ -381,7 +413,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-14', items: [
     {
-      id: 55068,
+      id: 78047,
       zh: { title: 'Anthropic is in regulatory-capture financial loop', desc: '' },
       ja: { title: 'Anthropic is in regulatory-capture financial loop', desc: '' },
       en: { title: 'Anthropic is in regulatory-capture financial loop', desc: '' },
@@ -391,7 +423,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-13', items: [
     {
-      id: 64991,
+      id: 77446,
       zh: { title: 'Due to concerns about malicious applications, GPT2 will not be released (2019)', desc: '' },
       ja: { title: 'Due to concerns about malicious applications, GPT2 will not be released (2019)', desc: '' },
       en: { title: 'Due to concerns about malicious applications, GPT2 will not be released (2019)', desc: '' },
@@ -401,7 +433,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-12', items: [
     {
-      id: 20557,
+      id: 80379,
       zh: { title: '智能体sDock: An IDE designed for 智能体ic AI research', desc: '' },
       ja: { title: 'エージェントsDock: An IDE designed for エージェントic AI research', desc: '' },
       en: { title: 'AgentsDock: An IDE designed for agentic AI research', desc: '' },
@@ -411,7 +443,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-11', items: [
     {
-      id: 58781,
+      id: 37860,
       zh: { title: 'How to Build an AI Software Factory: 智能体s That Open, Review, and Merge PRs', desc: '' },
       ja: { title: 'How to Build an AI Software Factory: エージェントs That Open, Review, and Merge PRs', desc: '' },
       en: { title: 'How to Build an AI Software Factory: Agents That Open, Review, and Merge PRs', desc: '' },
@@ -421,7 +453,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-10', items: [
     {
-      id: 67413,
+      id: 69292,
       zh: { title: 'Anthropic detAIls how Claude was misused for surveillance and weapons', desc: '' },
       ja: { title: 'Anthropic detAIls how Claude was misused for surveillance and weapons', desc: '' },
       en: { title: 'Anthropic details how Claude was misused for surveillance and weapons', desc: '' },
@@ -431,7 +463,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-09', items: [
     {
-      id: 99327,
+      id: 73628,
       zh: { title: 'Trezor\', desc: '' },
       ja: { title: 'Trezor\', desc: '' },
       en: { title: 'Trezor\', desc: '' },
@@ -441,7 +473,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-08', items: [
     {
-      id: 46732,
+      id: 86187,
       zh: { title: '嵌入 a bitmap font in your HyperCard stack', desc: '' },
       ja: { title: '埋め込み a bitmap font in your HyperCard stack', desc: '' },
       en: { title: 'Embedding a bitmap font in your HyperCard stack', desc: '' },
@@ -451,7 +483,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-07', items: [
     {
-      id: 84163,
+      id: 87978,
       zh: { title: 'The smallest edge AI device for local 大语言模型s', desc: '' },
       ja: { title: 'The smallest edge AI device for local 大規模言語モデルs', desc: '' },
       en: { title: 'The smallest edge AI device for local LLMs', desc: '' },
@@ -461,7 +493,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-06', items: [
     {
-      id: 25564,
+      id: 80310,
       zh: { title: 'Pivot to AI 安全, I beg you', desc: '' },
       ja: { title: 'Pivot to AI 安全性, I beg you', desc: '' },
       en: { title: 'Pivot to AI safety, I beg you', desc: '' },
@@ -471,7 +503,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-05', items: [
     {
-      id: 70164,
+      id: 82857,
       zh: { title: 'Chrome agAIn exempts 谷歌 from user site data settings', desc: '' },
       ja: { title: 'Chrome agAIn exempts Google from user site data settings', desc: '' },
       en: { title: 'Chrome again exempts Google from user site data settings', desc: '' },
@@ -481,7 +513,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-04', items: [
     {
-      id: 29462,
+      id: 46825,
       zh: { title: '分享： Moadim.io – A scheduler for 智能体s', desc: '' },
       ja: { title: 'シェア： Moadim.io – A scheduler for エージェントs', desc: '' },
       en: { title: 'Show HN: Moadim.io – A scheduler for agents', desc: '' },
@@ -491,7 +523,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-03', items: [
     {
-      id: 80101,
+      id: 76293,
       zh: { title: 'NYC mayor Mamdani imposes 1 year ban on AI for schools through 8th grade', desc: '' },
       ja: { title: 'NYC mayor Mamdani imposes 1 year ban on AI for schools through 8th grade', desc: '' },
       en: { title: 'NYC mayor Mamdani imposes 1 year ban on AI for schools through 8th grade', desc: '' },
@@ -501,7 +533,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-02', items: [
     {
-      id: 98698,
+      id: 60345,
       zh: { title: 'METR Report on OpenAI / Hugging Face Hacking Incident', desc: '' },
       ja: { title: 'METR Report on OpenAI / Hugging Face Hacking Incident', desc: '' },
       en: { title: 'METR Report on OpenAI / Hugging Face Hacking Incident', desc: '' },
@@ -511,7 +543,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-09-01', items: [
     {
-      id: 25984,
+      id: 37622,
       zh: { title: 'The efficient frontier of 大语言模型 推理', desc: '' },
       ja: { title: 'The efficient frontier of 大規模言語モデル 推論', desc: '' },
       en: { title: 'The efficient frontier of LLM inference', desc: '' },
@@ -521,7 +553,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-31', items: [
     {
-      id: 50620,
+      id: 22568,
       zh: { title: 'How to get a free .arpa domAIn', desc: '' },
       ja: { title: 'How to get a free .arpa domAIn', desc: '' },
       en: { title: 'How to get a free .arpa domain', desc: '' },
@@ -531,7 +563,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-30', items: [
     {
-      id: 87524,
+      id: 85676,
       zh: { title: 'How to build a 扩散 language model', desc: '' },
       ja: { title: 'How to build a 拡散 language model', desc: '' },
       en: { title: 'How to build a diffusion language model', desc: '' },
@@ -541,7 +573,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-29', items: [
     {
-      id: 66907,
+      id: 60190,
       zh: { title: 'The Rise and Fall of 智能体 Civilizations', desc: '' },
       ja: { title: 'The Rise and Fall of エージェント Civilizations', desc: '' },
       en: { title: 'The Rise and Fall of Agent Civilizations', desc: '' },
@@ -551,7 +583,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-28', items: [
     {
-      id: 20640,
+      id: 66064,
       zh: { title: 'I accidentally turned 大语言模型 memory into program analysis', desc: '' },
       ja: { title: 'I accidentally turned 大規模言語モデル memory into program analysis', desc: '' },
       en: { title: 'I accidentally turned LLM memory into program analysis', desc: '' },
@@ -561,7 +593,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-27', items: [
     {
-      id: 75257,
+      id: 11915,
       zh: { title: 'AI Engineer Notebooks – free, framework-free RAG/智能体s/evals on Colab', desc: '' },
       ja: { title: 'AI Engineer Notebooks – free, framework-free RAG/エージェントs/evals on Colab', desc: '' },
       en: { title: 'AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab', desc: '' },
@@ -571,7 +603,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-26', items: [
     {
-      id: 56759,
+      id: 24069,
       zh: { title: 'WebMCP Challenge – OpenAI', desc: '' },
       ja: { title: 'WebMCP Challenge – OpenAI', desc: '' },
       en: { title: 'WebMCP Challenge – OpenAI', desc: '' },
@@ -581,7 +613,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-25', items: [
     {
-      id: 43126,
+      id: 92305,
       zh: { title: 'MAIao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others', desc: '' },
       ja: { title: 'MAIao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others', desc: '' },
       en: { title: 'Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others', desc: '' },
@@ -591,7 +623,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-24', items: [
     {
-      id: 97434,
+      id: 87559,
       zh: { title: 'I, for one, can\', desc: '' },
       ja: { title: 'I, for one, can\', desc: '' },
       en: { title: 'I, for one, can\', desc: '' },
@@ -601,7 +633,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-23', items: [
     {
-      id: 63436,
+      id: 31281,
       zh: { title: 'I built a low-latency AI companion that plays Skyrim with me', desc: '' },
       ja: { title: 'I built a low-latency AI companion that plays Skyrim with me', desc: '' },
       en: { title: 'I built a low-latency AI companion that plays Skyrim with me', desc: '' },
@@ -611,7 +643,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-22', items: [
     {
-      id: 68215,
+      id: 41904,
       zh: { title: 'AI has fAIled to win people\', desc: '' },
       ja: { title: 'AI has fAIled to win people\', desc: '' },
       en: { title: 'AI has failed to win people\', desc: '' },
@@ -621,7 +653,7 @@ const NEWS_DATA = [
   ]},
   { day: '2026-08-21', items: [
     {
-      id: 85053,
+      id: 50337,
       zh: { title: 'A Call for Action: The "Leiden Declaration on AI and Math"', desc: '' },
       ja: { title: 'A Call for Action: The "Leiden Declaration on AI and Math"', desc: '' },
       en: { title: 'A Call for Action: The "Leiden Declaration on AI and Math"', desc: '' },
